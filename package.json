@@ -1,0 +1,23 @@
+{
+  "name": "cerrado-los-lunes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caamlg/cerrado-los-lunes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caamlg/cerrado-los-lunes/issues"
+  },
+  "homepage": "https://github.com/caamlg/cerrado-los-lunes#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}
