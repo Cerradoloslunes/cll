@@ -1,8 +1,10 @@
 @import "vars.scss";
+@import "fonts.scss";
 @import "bootstrap.scss";
 
 /* navbar */
 .navbar {
+    font-family: Futura;
     position: fixed;
     width: 100%;
     .navbar-brand {

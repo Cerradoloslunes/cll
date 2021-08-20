@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /*paleta de colores */
+@font-face {
+  font-family: Futura;
+  src: url("../font/FUENTES/futurastd.otf") format("opentype");
+}
+/*@font-face {
+    font-family: Futura;
+    font-weight: lighter;
+    src: url("../font/FUENTES/FuturaBT_Light.otf") format("opentype");
+}*/
+@font-face {
+  font-family: Futura;
+  font-weight: bold;
+  src: url("../font/FUENTES/FuturaBT-Bold.otf") format("opentype");
+}
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11115,6 +11129,7 @@ textarea.form-control-lg {
 }
 /* navbar */
 .navbar {
+  font-family: Futura;
   position: fixed;
   width: 100%;
 }
