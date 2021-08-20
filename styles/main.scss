@@ -1,2 +1,12 @@
 @import "vars.scss";
 @import "bootstrap.scss";
+
+/* navbar */
+.navbar {
+    .navbar-brand {
+        padding: 0;
+        .navbar-brand__logo {
+            width: 80px;
+        }
+    }
+}
