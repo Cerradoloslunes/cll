@@ -11114,6 +11114,10 @@ textarea.form-control-lg {
   }
 }
 /* navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+}
 .navbar .navbar-brand {
   padding: 0;
 }
