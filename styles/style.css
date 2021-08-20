@@ -11132,9 +11132,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  font-family: Futura;
+  box-sizing: border-box;
+}
+
 /* navbar */
 .navbar {
-  font-family: Futura;
   position: fixed;
   width: 100%;
 }

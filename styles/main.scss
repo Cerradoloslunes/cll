@@ -2,9 +2,13 @@
 @import "fonts.scss";
 @import "bootstrap.scss";
 
+* {
+    font-family: Futura;
+    box-sizing: border-box;
+}
+
 /* navbar */
 .navbar {
-    font-family: Futura;
     position: fixed;
     width: 100%;
     .navbar-brand {
