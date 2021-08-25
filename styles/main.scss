@@ -4,7 +4,8 @@
 @import "layout.scss";
 
 * {
-    font-family: Futura;
+    font-family: "Futura";
+    font-weight: bold;
     box-sizing: border-box;
 }
 
@@ -12,10 +13,17 @@
 .navbar {
     position: fixed;
     width: 100%;
+    background-color: $institucional;
     .navbar-brand {
         padding: 0;
         .navbar-brand__logo {
-            width: 80px;
+            width: 200px;
         }
     }
+}
+
+p {
+    font-family: "Futura";
+    font-weight: normal;
+    margin-bottom: 10px;
 }
