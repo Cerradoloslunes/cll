@@ -11153,6 +11153,7 @@ textarea.form-control-lg {
 
 /* navbar */
 .navbar {
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -11166,6 +11167,7 @@ textarea.form-control-lg {
 }
 .navbar .nav-link {
   color: red;
+  margin-left: 2rem;
 }
 
 p {
