@@ -12,6 +12,7 @@
 /* navbar */
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: $institucional;
     .navbar-brand {
@@ -19,6 +20,9 @@
         .navbar-brand__logo {
             width: 200px;
         }
+    }
+    .nav-link {
+        color: red;
     }
 }
 
