@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Cerrado los lunes</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Cerrado los lunes</title>
 </head>
+
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.png" class="navbar-brand__logo" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#columnas">COLUMNAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#quienesSomos">QUIENES SOMOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosotros">NOSOTROS</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-    <div class="container-fluid p-5" id="welcome">
-        <h1>¡Hola!</h1>
-        <p class="institucional">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores itaque pariatur dolor illo minima exercitationem corrupti at ipsam nihil mollitia molestias id rerum unde obcaecati nisi, molestiae quam. Tempora!</p>
-        <p class="institucional">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A minus qui quod rem. Voluptates fugiat, dolore eos, eius atque voluptas quod consequatur beatae harum aliquid inventore porro, quo placeat cum!</p>
-        <p class="institucional">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum est accusantium dolorem repellat autem, voluptas labore assumenda ut nam sapiente debitis eaque rerum? Ratione cum facere optio consectetur deleniti!</p>
-    <div class="btn btn-mis m-3">ir al vivo</div> <a id="youtube_video" target="blank"><div class="btn btn-otros">último programa</div></a>
+  <div class="navbar__whiteSpace"></div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container navbar__container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" class="navbar-brand__logo" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#columnas">COLUMNAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quienesSomos">QUIENES SOMOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-    <div id="columnas"></div>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+  <div id="welcome">
+    <div class="container welcome__container">
+      <div class="welcome__info">
+        <h1>¡Hola!</h1>
+        <p class="institucional">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores itaque
+          pariatur dolor illo minima exercitationem corrupti at ipsam nihil mollitia molestias id rerum unde obcaecati
+          nisi, molestiae quam. Tempora!</p>
+        <p class="institucional">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A minus qui quod rem.
+          Voluptates fugiat, dolore eos, eius atque voluptas quod consequatur beatae harum aliquid inventore porro, quo
+          placeat cum!</p>
+        <p class="institucional">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum est accusantium
+          dolorem repellat autem, voluptas labore assumenda ut nam sapiente debitis eaque rerum? Ratione cum facere
+          optio consectetur deleniti!</p>
+        <div class="btn btn-mis m-3">ir al vivo</div> <a id="youtube_video" target="blank">
+          <div class="btn btn-otros">último programa</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section id="columnas">
+    <div class="container columnas__container">
+      <h2>Columnas</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate recusandae quibusdam quo
+        laudantium eos, et sint saepe iure laborum omnis voluptates esse, earum inventore. Sequi explicabo corrupti
+        sapiente recusandae.
+        Voluptatibus provident ipsum saepe veritatis, quam dolorem magni quasi culpa expedita voluptate rem autem
+        quibusdam corporis quia aliquid laudantium rerum officia quas, odio fugiat explicabo quaerat deserunt
+        cupiditate! Modi, fugiat?</p>
+    </div>
+  </section>
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>

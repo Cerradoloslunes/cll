@@ -12,10 +12,14 @@
 /* navbar */
 .navbar {
     z-index: 1;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: $institucional;
+   
+    .navbar__container {
+        width: 65%;
+    }
     .navbar-brand {
         padding: 0;
         .navbar-brand__logo {
@@ -55,3 +59,10 @@ p.institucional {
     border: 1px solid $miselanias;
 }
     
+
+/* columnas */
+#columnas {
+    h2 {
+        margin-bottom: 1rem;
+    }
+}

@@ -11139,10 +11139,25 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#welcome {
-  position: relative;
-  top: 112px;
+.navbar__whiteSpace {
+  height: 30px;
   background-color: #00DAA1;
+}
+
+#welcome {
+  height: 80vh;
+  background-color: #00DAA1;
+}
+#welcome .welcome__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#columnas {
+  margin-top: 5rem;
+  height: 100vh;
 }
 
 * {
@@ -11154,10 +11169,13 @@ textarea.form-control-lg {
 /* navbar */
 .navbar {
   z-index: 1;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   background-color: #00DAA1;
+}
+.navbar .navbar__container {
+  width: 65%;
 }
 .navbar .navbar-brand {
   padding: 0;
@@ -11198,6 +11216,11 @@ p.institucional {
 .btn-otros {
   background-color: inherit;
   border: 1px solid #743FF7;
+}
+
+/* columnas */
+#columnas h2, #columnas .h2 {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
