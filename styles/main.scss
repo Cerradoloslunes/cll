@@ -12,13 +12,12 @@
 /* navbar */
 .navbar {
     z-index: 1;
-    position: sticky;
-    height: 200px;
+    position: fixed;
     top: 0;
-    padding-top: 50px;
+    height: 200px;
     width: 100%;
     background-color: $institucional;
-    transition: 1s;
+    transition:  all 1s;
    
     .navbar__container {
         width: 80%;

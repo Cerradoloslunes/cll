@@ -11140,7 +11140,7 @@ textarea.form-control-lg {
   }
 }
 #welcome {
-  height: 80vh;
+  height: 100vh;
   background-color: #00DAA1;
 }
 #welcome .welcome__container {
@@ -11164,13 +11164,12 @@ textarea.form-control-lg {
 /* navbar */
 .navbar {
   z-index: 1;
-  position: sticky;
-  height: 200px;
+  position: fixed;
   top: 0;
-  padding-top: 50px;
+  height: 200px;
   width: 100%;
   background-color: #00DAA1;
-  transition: 1s;
+  transition: all 1s;
 }
 .navbar .navbar__container {
   width: 80%;
