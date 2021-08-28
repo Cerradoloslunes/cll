@@ -11139,11 +11139,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.navbar__whiteSpace {
-  height: 30px;
-  background-color: #00DAA1;
-}
-
 #welcome {
   height: 80vh;
   background-color: #00DAA1;
@@ -11170,18 +11165,23 @@ textarea.form-control-lg {
 .navbar {
   z-index: 1;
   position: sticky;
+  height: 200px;
   top: 0;
+  padding-top: 50px;
   width: 100%;
   background-color: #00DAA1;
+  transition: 1s;
 }
 .navbar .navbar__container {
-  width: 65%;
+  width: 80%;
+  position: relative;
 }
 .navbar .navbar-brand {
   padding: 0;
 }
 .navbar .navbar-brand .navbar-brand__logo {
   width: 200px;
+  transition: 1s;
 }
 .navbar .nav-link {
   color: red;

@@ -13,17 +13,22 @@
 .navbar {
     z-index: 1;
     position: sticky;
+    height: 200px;
     top: 0;
+    padding-top: 50px;
     width: 100%;
     background-color: $institucional;
+    transition: 1s;
    
     .navbar__container {
-        width: 65%;
+        width: 80%;
+        position: relative;
     }
     .navbar-brand {
         padding: 0;
         .navbar-brand__logo {
             width: 200px;
+            transition: 1s;
         }
     }
     .nav-link {
