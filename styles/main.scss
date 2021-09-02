@@ -14,9 +14,10 @@
     z-index: 1;
     position: fixed;
     top: 0;
+    padding-top: 50px;
     width: 100%;
     background-color: $institucional;
-    transition:  all 1s;
+    transition:  all 0.5s ease-in-out;
    
     .navbar__container {
         width: 80%;

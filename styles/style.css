@@ -11166,9 +11166,10 @@ textarea.form-control-lg {
   z-index: 1;
   position: fixed;
   top: 0;
+  padding-top: 50px;
   width: 100%;
   background-color: #00DAA1;
-  transition: all 1s;
+  transition: all 0.5s ease-in-out;
 }
 .navbar .navbar__container {
   width: 80%;
