@@ -36,7 +36,12 @@
         color: red;
         margin-left: 3rem;
         padding: 10px 0!important;
+    }
+    .active {
         border-bottom: 2px solid black;
+    }
+    .nav-link--inicio {
+        display: none;
     }
 }
 
@@ -74,11 +79,12 @@ p.institucional {
         margin-left: 13%;
         margin-bottom: 1rem;
         font-weight: bold;
+        font-size: 2.4rem;
     }
     .columnas__container {
-        max-width: 60%;
+        max-width: 65%;
         .columnas__card {
-            height: 380px;
+            height: 400px;
             padding: 2rem 0;
             margin: 0 auto;
             display: flex;
@@ -105,7 +111,7 @@ p.institucional {
         }
         .columnas__card--2 {
             &:hover {
-                box-shadow: 0px 0px 10px $en_contramano ;
+                box-shadow: 5px 5px 30px $en_contramano ;
             }
         }
         .columnas__card--3 {

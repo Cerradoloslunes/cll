@@ -13,10 +13,24 @@ $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(r
       });
 });
 
+window.onscroll = () => { scrollFunction(); activeLink()};
 
-window.onscroll = function () { scrollFunction() };
+//subraya el link correspondiente a la sección actual
+const activeLink = () => {
+   var st = $(this).scrollTop();
 
-function scrollFunction() {
+   $("section").each(function () {
+      if (st > $(this).offset().top && st <= $(this).offset().top + $(this).height()) {
+         var id = $(this).attr('id');
+         $('a[href="#' + id + '"]').addClass('active');
+      } else {
+         var id = $(this).attr('id');
+         $('a[href="#' + id + '"]').removeClass('active');
+      }
+   });
+};
+
+const scrollFunction = () => {
    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       document.getElementById("logo").style.width = "90px";
       document.getElementById("navbar").style.paddingTop = "10px";
@@ -26,5 +40,11 @@ function scrollFunction() {
       document.getElementById("logo").style.width = "290px";
       document.getElementById("navbar").style.paddingTop = "100px";
       document.getElementById("navbar").style.backgroundColor = "#00DAA1";
+   }
+   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      document.getElementById("nav-link--inicio").style.display = "block";
+   }
+   if (document.body.scrollTop < 500 && document.documentElement.scrollTop < 500) {
+      document.getElementById("nav-link--inicio").style.display = "none";
    }
 }
