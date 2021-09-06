@@ -11312,16 +11312,20 @@ p.institucional {
 }
 #contacto .contacto__container .contacto__card .contacto__form {
   background-color: #00DAA1;
-  padding: 50px 120px 50px 80px;
+  padding: 100px 120px 50px 80px;
 }
-#contacto .contacto__container .contacto__card .contacto__form input {
+#contacto .contacto__container .contacto__card .contacto__form h4, #contacto .contacto__container .contacto__card .contacto__form .h4 {
+  font-weight: bold;
+  margin-left: 10px;
+}
+#contacto .contacto__container .contacto__card .contacto__form form input {
   border-radius: 20px;
 }
-#contacto .contacto__container .contacto__card .contacto__form label, #contacto .contacto__container .contacto__card .contacto__form span {
+#contacto .contacto__container .contacto__card .contacto__form form label, #contacto .contacto__container .contacto__card .contacto__form form span {
   margin-left: 10px;
   margin-bottom: 0.5rem;
 }
-#contacto .contacto__container .contacto__card .contacto__form button {
+#contacto .contacto__container .contacto__card .contacto__form form button {
   float: right;
   background-color: #743FF7;
   color: white;
@@ -11332,7 +11336,7 @@ p.institucional {
   border: none;
   font-weight: bold;
 }
-#contacto .contacto__container .contacto__card .contacto__form textarea {
+#contacto .contacto__container .contacto__card .contacto__form form textarea {
   border-radius: 20px;
   margin-top: 1rem;
 }
