@@ -23,8 +23,8 @@ function scrollFunction() {
       document.getElementById("navbar").style.backgroundColor = "white";
    }
    if (document.body.scrollTop < 80 && document.documentElement.scrollTop < 80) {
-      document.getElementById("logo").style.width = "200px";
-      document.getElementById("navbar").style.paddingTop = "50px";
+      document.getElementById("logo").style.width = "290px";
+      document.getElementById("navbar").style.paddingTop = "100px";
       document.getElementById("navbar").style.backgroundColor = "#00DAA1";
    }
 }
