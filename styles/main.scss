@@ -17,7 +17,7 @@
     padding-top: 50px;
     width: 100%;
     background-color: $institucional;
-    transition:  all 0.5s ease-in-out;
+    transition:  all 0.2s ease-in-out;
    
     .navbar__container {
         width: 80%;
@@ -27,7 +27,7 @@
         padding: 0;
         .navbar-brand__logo {
             width: 200px;
-            transition: 1s;
+            transition: 0.2s;
         }
     }
     .nav-link {
@@ -67,6 +67,59 @@ p.institucional {
 /* columnas */
 #columnas {
     h2 {
+        margin-left: 13%;
         margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    .columnas__container {
+        max-width: 60%;
+        .columnas__card {
+            height: 380px;
+            padding: 2rem 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img {
+                height: 12rem;
+            }
+            h3 {
+                font-weight: bold;
+                font-size: 2.3rem;
+            }
+            p {
+                margin-top: 1rem;
+                max-width: 340px;
+                text-align: center;
+                color: gray;
+                font-size: 1.15rem;
+            }
+            &:hover {
+                transition: 1s;
+            }
+        }
+        .columnas__card--2 {
+            &:hover {
+                box-shadow: -2px 2px 20px $en_contramano ;
+            }
+        }
+        .columnas__card--3 {
+            &:hover {
+                box-shadow: 0px 0px 70px $viaja_sentado ;
+            }
+        }
+        .columnas__card--4 {
+            &:hover {
+                box-shadow: 0px 0px 70px $historias_retro ;
+            }
+        }
+        .columnas__card--5 {
+            &:hover {
+                box-shadow: 0px 0px 70px $fuera_de_toma ;
+            }
+        }
+        
+        
     }
 }
