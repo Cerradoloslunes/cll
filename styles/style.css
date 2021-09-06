@@ -11186,9 +11186,10 @@ textarea.form-control-lg {
   color: red;
   margin-left: 3rem;
   padding: 10px 0 !important;
+  font-size: 1.15rem;
 }
 .navbar .active {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
 }
 .navbar .nav-link--inicio {
   display: none;
@@ -11299,6 +11300,41 @@ p.institucional {
 }
 #columnas .columnas__container .columnas__card--5:hover {
   box-shadow: 0px 0px 10px #ECEC8E;
+}
+
+/* CONTACTO */
+#contacto {
+  height: 100vh;
+  padding-top: 10rem;
+}
+#contacto .contacto__container .contacto__card {
+  box-shadow: 0 0 15px #9c9c9c;
+}
+#contacto .contacto__container .contacto__card .contacto__form {
+  background-color: #00DAA1;
+  padding: 50px 120px 50px 80px;
+}
+#contacto .contacto__container .contacto__card .contacto__form input {
+  border-radius: 20px;
+}
+#contacto .contacto__container .contacto__card .contacto__form label, #contacto .contacto__container .contacto__card .contacto__form span {
+  margin-left: 10px;
+  margin-bottom: 0.5rem;
+}
+#contacto .contacto__container .contacto__card .contacto__form button {
+  float: right;
+  background-color: #743FF7;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 40px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  font-weight: bold;
+}
+#contacto .contacto__container .contacto__card .contacto__form textarea {
+  border-radius: 20px;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

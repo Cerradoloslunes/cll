@@ -35,9 +35,10 @@
         color: red;
         margin-left: 3rem;
         padding: 10px 0!important;
+        font-size: 1.15rem;
     }
     .active {
-        border-bottom: 2px solid black;
+        border-bottom: 3px solid black;
     }
     .nav-link--inicio {
         display: none;
@@ -156,5 +157,45 @@ p.institucional {
         }
         
         
+    }
+}
+
+
+/* CONTACTO */
+#contacto {
+    height: 100vh;
+    padding-top: 10rem;
+    .contacto__container {
+        .contacto__card {
+            box-shadow: 0 0 15px rgb(156, 156, 156);
+            .contacto__info {
+            }
+            .contacto__form {
+                background-color: $institucional;
+                padding: 50px 120px 50px 80px;
+                input {
+                    border-radius: 20px;
+                }
+                label,span {
+                    margin-left: 10px;
+                    margin-bottom: 0.5rem;
+                }
+                button {
+                    float: right;
+                    background-color: $miselanias;
+                    color: white;
+                    border-radius: 20px;
+                    padding: 10px 40px;
+                    outline: none;
+                    box-shadow: none;
+                    border: none;
+                    font-weight: bold;
+                }
+                textarea {
+                    border-radius: 20px;
+                    margin-top: 1rem;
+                }
+            }
+        }
     }
 }
