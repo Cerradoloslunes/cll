@@ -16,6 +16,7 @@
     top: 0;
     padding-top: 50px;
     width: 100%;
+    height: 100px;
     background-color: $institucional;
     transition:  all 0.2s ease-in-out;
    
@@ -101,22 +102,22 @@ p.institucional {
         }
         .columnas__card--2 {
             &:hover {
-                box-shadow: -2px 2px 20px $en_contramano ;
+                box-shadow: 0px 0px 10px $en_contramano ;
             }
         }
         .columnas__card--3 {
             &:hover {
-                box-shadow: 0px 0px 70px $viaja_sentado ;
+                box-shadow: 0px 0px 10px $viaja_sentado ;
             }
         }
         .columnas__card--4 {
             &:hover {
-                box-shadow: 0px 0px 70px $historias_retro ;
+                box-shadow: 0px 0px 10px $historias_retro ;
             }
         }
         .columnas__card--5 {
             &:hover {
-                box-shadow: 0px 0px 70px $fuera_de_toma ;
+                box-shadow: 0px 0px 10px $fuera_de_toma ;
             }
         }
         

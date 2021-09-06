@@ -20,7 +20,7 @@ function scrollFunction() {
    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       document.getElementById("logo").style.width = "90px";
       document.getElementById("navbar").style.paddingTop = "10px";
-     // document.getElementById("navbar").style.backgroundColor = "white";
+      document.getElementById("navbar").style.backgroundColor = "white";
    }
    if (document.body.scrollTop < 80 && document.documentElement.scrollTop < 80) {
       document.getElementById("logo").style.width = "200px";
