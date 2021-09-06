@@ -11152,7 +11152,6 @@ textarea.form-control-lg {
 
 #columnas {
   padding-top: 10rem;
-  height: 100vh;
 }
 
 * {
@@ -11169,7 +11168,6 @@ textarea.form-control-lg {
   padding-top: 100px;
   width: 100%;
   height: 100px;
-  background-color: #00DAA1;
   transition: all 0.3s;
 }
 .navbar .navbar__container {
@@ -11227,14 +11225,36 @@ p.institucional {
 }
 
 /* columnas */
+#columnas {
+  position: relative;
+}
 #columnas h2, #columnas .h2 {
   margin-left: 13%;
   margin-bottom: 1rem;
   font-weight: bold;
   font-size: 2.4rem;
 }
+#columnas .columnas__circulo {
+  width: 120px;
+  position: absolute;
+  top: 480px;
+  left: 0;
+}
+#columnas .columnas__ondas--left {
+  width: 250px;
+  position: absolute;
+  bottom: 100px;
+  left: -100px;
+}
+#columnas .columnas__ondas--right {
+  width: 250px;
+  position: absolute;
+  bottom: 400px;
+  right: -14%;
+  overflow: hidden;
+}
 #columnas .columnas__container {
-  max-width: 65%;
+  max-width: 80%;
 }
 #columnas .columnas__container .columnas__card {
   height: 400px;
@@ -11263,7 +11283,7 @@ p.institucional {
   transition: 1s;
 }
 #columnas .columnas__container .columnas__card--2:hover {
-  box-shadow: 5px 5px 30px #00DBEA;
+  box-shadow: 0px 0px 10px #00DBEA;
 }
 #columnas .columnas__container .columnas__card--3:hover {
   box-shadow: 0px 0px 10px #A389D7;
