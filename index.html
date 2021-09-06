@@ -31,14 +31,14 @@
             <a class="nav-link" href="#quienesSomos">QUIENES SOMOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#nosotros">CONTACTO</a>
+            <a class="nav-link" href="#contacto">CONTACTO</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div id="welcome">
+  <section id="welcome">
     <div class="container welcome__container">
       <div class="welcome__info">
         <h1>¡Hola!</h1>
@@ -56,7 +56,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 
   <section id="columnas">
     <img class="columnas__circulo--left" src="./images/circulo-violeta.png" alt="">
@@ -87,7 +87,8 @@
           <div class="columnas__card columnas__card--4">
             <img src="./images/icons-columnas-5.png" alt="">
             <h3>Historias Retro</h3>
-            <p>Iván abre la cápsula del tiempo y viaja al pasado para descubrir las historias que marcaron un antes y un después</p>
+            <p>Iván abre la cápsula del tiempo y viaja al pasado para descubrir las historias que marcaron un antes y un
+              después</p>
           </div>
         </div>
 
@@ -105,9 +106,58 @@
 
   <section id="contacto">
     <div class="container contacto__container">
+      <div class="row row-cols-2 contacto__card">
+
+        <div class="col contacto__info">
+          <img src="" alt="">
+          <span>Todos los lunes de 13.00 a 15.00hs</span>
+          <span>Seguinos en nuestras redes</span>
+        </div>
+
+        <div class="col contacto__form">
+          <h4 class="mb-3">Envíanos un mensaje</h4>
+          <form action="">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre y apellido *</label>
+              <input type="name" class="form-control" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <label for="telefono">Celular *</label>
+                <input type="phone" id="telefono" name="telefono" class="form-control" placeholder="First name"
+                  aria-label="First name" required>
+              </div>
+              <div class="col">
+                <label for="email">Email *</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Last name"
+                  aria-label="Last name" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre de la empresa (opcional)</label>
+              <input type="name" class="form-control" id="nombre" name="nombre">
+            </div>
+
+            <div class="mb-3 form-floating">
+              <span>Mensaje *</span>
+              <textarea class="form-control" placeholder="Tu mensaje aquí" id="floatingTextarea2" style="height: 100px"
+                required></textarea>
+            </div>
+
+            <p>* Campos obligatorios</p>
+
+            <button type="submit">CONTACTAR</button>
+
+          </form>
+
+        </div>
+
+      </div>
+
 
     </div>
-
   </section>
 
 
