@@ -11179,7 +11179,7 @@ textarea.form-control-lg {
 }
 .navbar .navbar-brand .navbar-brand__logo {
   width: 290px;
-  margin-left: 100px;
+  margin-left: 170px;
   transition: 0.3s;
 }
 .navbar .nav-link {
@@ -11227,31 +11227,37 @@ p.institucional {
 /* columnas */
 #columnas {
   position: relative;
+  overflow: hidden;
 }
 #columnas h2, #columnas .h2 {
   margin-left: 13%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
   font-weight: bold;
   font-size: 2.4rem;
 }
-#columnas .columnas__circulo {
+#columnas .columnas__circulo--left {
   width: 120px;
   position: absolute;
   top: 480px;
   left: 0;
 }
+#columnas .columnas__circulo--right {
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+  right: -90px;
+}
 #columnas .columnas__ondas--left {
-  width: 250px;
+  width: 290px;
   position: absolute;
   bottom: 100px;
-  left: -100px;
+  left: -120px;
 }
 #columnas .columnas__ondas--right {
-  width: 250px;
+  width: 290px;
   position: absolute;
   bottom: 400px;
-  right: -14%;
-  overflow: hidden;
+  right: -180px;
 }
 #columnas .columnas__container {
   max-width: 80%;
@@ -11259,7 +11265,7 @@ p.institucional {
 #columnas .columnas__container .columnas__card {
   height: 400px;
   padding: 2rem 0;
-  margin: 0 auto;
+  margin: 1rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11277,7 +11283,7 @@ p.institucional {
   max-width: 340px;
   text-align: center;
   color: gray;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 #columnas .columnas__container .columnas__card:hover {
   transition: 1s;
