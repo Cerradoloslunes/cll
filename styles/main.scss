@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* navbar */
 .navbar {
     z-index: 1;
@@ -163,28 +165,72 @@ p.institucional {
 
 /* CONTACTO */
 #contacto {
-    height: 100vh;
+    height: 180vh;
     padding-top: 10rem;
     .contacto__container {
         max-width: 1400px;
         width: 90%;
         .contacto__card {
-            box-shadow: 0 0 15px rgb(156, 156, 156);
+            box-shadow: 0 0 15px rgb(194, 194, 194);
             .contacto__info {
+                padding: 1.2rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .info__img {
+                    height: 60%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    img {
+                        width: 87%;
+                    }
+                    p {
+                        font-size: 1.3rem;
+                        margin-top: 1.3rem;
+                        font-weight: bold;
+                        color: $miselanias;
+                    }
+                }
+                .contacto__redes {
+                    height: 45%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 3rem;
+                    p {
+                        font-size: 1.2rem;
+                        margin-top: 1.2rem;
+                        font-weight: bold;
+                        color: $miselanias;
+                        text-align: center;
+                    }
+                    .redes__lista {
+                        list-style: none;
+                        display: flex;
+                        padding: 0;
+                        margin-top: 1rem;
+                        li {
+                            margin: 0 1rem;
+                        }
+                    }
+                }
             }
             .contacto__form {
                 background-color: $institucional;
-                padding: 100px 120px 50px 80px;
-
+                padding: 130px 120px 50px 80px;
                 h4 {
                     font-weight: bold;
                     margin-left: 10px;
                     font-size: 2rem;
                 }
-
                 form {
                     input {
-                        border-radius: 20px;
+                        border-radius: 30px;
+                        height: 3rem;
                         &:focus {
                             background-color: #fff;
                             border-color: white;
@@ -195,6 +241,7 @@ p.institucional {
                     label,span {
                         margin-left: 10px;
                         margin-bottom: 0.5rem;
+                        font-size: 1.15rem;
                         span {
                             color: red;
                         }
@@ -215,7 +262,7 @@ p.institucional {
                         margin-top: 1rem;
                     }
                     .leyenda {
-                        font-size: 0.8rem;
+                        font-size: 0.9rem;
                     }
                 }
             }
@@ -224,6 +271,7 @@ p.institucional {
 }
 
 @media screen and (max-width:768px) {
+    /* Columnas */
     #columnas {
         .columnas__ondas--right {
             bottom: 900px;

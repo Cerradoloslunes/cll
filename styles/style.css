@@ -18,14 +18,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/*
-@font-face {
-    font-family: Futura;
-    font-weight: bold;
-    src: url("../font/FUENTES/futurastd-heavy.otf") format("opentype");
-}
-
-*/
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11304,7 +11296,7 @@ p.institucional {
 
 /* CONTACTO */
 #contacto {
-  height: 100vh;
+  height: 180vh;
   padding-top: 10rem;
 }
 #contacto .contacto__container {
@@ -11312,11 +11304,58 @@ p.institucional {
   width: 90%;
 }
 #contacto .contacto__container .contacto__card {
-  box-shadow: 0 0 15px #9c9c9c;
+  box-shadow: 0 0 15px #c2c2c2;
+}
+#contacto .contacto__container .contacto__card .contacto__info {
+  padding: 1.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contacto .contacto__container .contacto__card .contacto__info .info__img {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contacto .contacto__container .contacto__card .contacto__info .info__img img {
+  width: 87%;
+}
+#contacto .contacto__container .contacto__card .contacto__info .info__img p {
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  font-weight: bold;
+  color: #743FF7;
+}
+#contacto .contacto__container .contacto__card .contacto__info .contacto__redes {
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+#contacto .contacto__container .contacto__card .contacto__info .contacto__redes p {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  font-weight: bold;
+  color: #743FF7;
+  text-align: center;
+}
+#contacto .contacto__container .contacto__card .contacto__info .contacto__redes .redes__lista {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-top: 1rem;
+}
+#contacto .contacto__container .contacto__card .contacto__info .contacto__redes .redes__lista li {
+  margin: 0 1rem;
 }
 #contacto .contacto__container .contacto__card .contacto__form {
   background-color: #00DAA1;
-  padding: 100px 120px 50px 80px;
+  padding: 130px 120px 50px 80px;
 }
 #contacto .contacto__container .contacto__card .contacto__form h4, #contacto .contacto__container .contacto__card .contacto__form .h4 {
   font-weight: bold;
@@ -11324,7 +11363,8 @@ p.institucional {
   font-size: 2rem;
 }
 #contacto .contacto__container .contacto__card .contacto__form form input {
-  border-radius: 20px;
+  border-radius: 30px;
+  height: 3rem;
 }
 #contacto .contacto__container .contacto__card .contacto__form form input:focus {
   background-color: #fff;
@@ -11335,6 +11375,7 @@ p.institucional {
 #contacto .contacto__container .contacto__card .contacto__form form label, #contacto .contacto__container .contacto__card .contacto__form form span {
   margin-left: 10px;
   margin-bottom: 0.5rem;
+  font-size: 1.15rem;
 }
 #contacto .contacto__container .contacto__card .contacto__form form label span, #contacto .contacto__container .contacto__card .contacto__form form span span {
   color: red;
@@ -11355,10 +11396,11 @@ p.institucional {
   margin-top: 1rem;
 }
 #contacto .contacto__container .contacto__card .contacto__form form .leyenda {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 768px) {
+  /* Columnas */
   #columnas .columnas__ondas--right {
     bottom: 900px;
   }

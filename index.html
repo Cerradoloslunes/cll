@@ -107,21 +107,50 @@
   <section id="contacto">
     <div class="container contacto__container">
       <div class="row row-cols-1 row-cols-lg-2 contacto__card">
-
         <div class="col contacto__info">
-          <img src="" alt="">
-          <span>Todos los lunes de 13.00 a 15.00hs</span>
-          <span>Seguinos en nuestras redes</span>
+          <div class="info__img">
+            <img src="./images/contacto-foto.png" alt="">
+            <p>Todos los lunes de 13.00 a 15.00hs</p>
+          </div>
+          <div class="contacto__redes">
+            <p>Seguinos en nuestras redes</p>
+            <ul class="redes__lista">
+              <li>
+                <a href="">
+                  <img src="./images/SPOTIFY-ICON.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/INSTRAGRAM-ICON.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/FACEBOOK-ICON.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/TIKTOK-ICON.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/LINKEDIN-ICON.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-
         <div class="col contacto__form">
           <h4 class="mb-3">Envíanos un mensaje</h4>
           <form action="">
-            <div class="mb-3">
+            <div class="mb-4">
               <label for="nombre" class="form-label">Nombre y apellido <span>*</span></label>
               <input type="text" class="form-control" id="nombre" name="nombre" required>
             </div>
-            <div class="row mb-3">
+            <div class="row mb-4">
               <div class="col">
                 <label for="telefono required">Celular <span>*</span></label>
                 <input type="phone" id="telefono" name="telefono" class="form-control" aria-label="First name" required>
@@ -131,9 +160,9 @@
                 <input type="email" class="form-control" name="email" id="email" aria-label="Last name" required>
               </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-4">
               <label for="nombre" class="form-label">Nombre de la empresa (opcional)</label>
-              <input type="name" class="form-control" id="nombre" name="nombre">
+              <input type="name" class="form-control mb-4" id="nombre" name="nombre">
             </div>
             <span>Mensaje <span style="color: red;">*</span></span>
             <div class="mb-3 form-floating">
@@ -141,7 +170,7 @@
               <textarea class="form-control" placeholder="Tu mensaje aquí" id="floatingTextarea2" style="height: 100px"
                 required></textarea>
             </div>
-            <p class="leyenda"><span>*</span> Campos obligatorios</p>
+            <p class="leyenda"><span style="color: red;">*</span> Campos obligatorios</p>
             <button type="submit">CONTACTAR</button>
           </form>
         </div>
