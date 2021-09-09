@@ -27,13 +27,13 @@
         padding: 0;
         .navbar-brand__logo {
             width: 290px;
-            margin-left: 170px;
+            margin-left: 100px;
             transition: 0.3s;
         }
     }
     .nav-link {
         color: red;
-        margin-left: 3rem;
+        margin: 0 20px;
         padding: 10px 0!important;
         font-size: 1.15rem;
     }
@@ -166,6 +166,8 @@ p.institucional {
     height: 100vh;
     padding-top: 10rem;
     .contacto__container {
+        max-width: 1400px;
+        width: 90%;
         .contacto__card {
             box-shadow: 0 0 15px rgb(156, 156, 156);
             .contacto__info {
@@ -177,15 +179,25 @@ p.institucional {
                 h4 {
                     font-weight: bold;
                     margin-left: 10px;
+                    font-size: 2rem;
                 }
 
                 form {
                     input {
                         border-radius: 20px;
+                        &:focus {
+                            background-color: #fff;
+                            border-color: white;
+                            outline: 0;
+                            box-shadow: none;
+                        }
                     }
                     label,span {
                         margin-left: 10px;
                         margin-bottom: 0.5rem;
+                        span {
+                            color: red;
+                        }
                     }
                     button {
                         float: right;
@@ -202,8 +214,23 @@ p.institucional {
                         border-radius: 20px;
                         margin-top: 1rem;
                     }
+                    .leyenda {
+                        font-size: 0.8rem;
+                    }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #columnas {
+        .columnas__ondas--right {
+            bottom: 900px;
+        }
+        .columnas__ondas--left {
+            bottom: 350px;
+            left: -200px;
         }
     }
 }

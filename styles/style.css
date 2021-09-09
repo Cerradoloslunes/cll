@@ -11179,12 +11179,12 @@ textarea.form-control-lg {
 }
 .navbar .navbar-brand .navbar-brand__logo {
   width: 290px;
-  margin-left: 170px;
+  margin-left: 100px;
   transition: 0.3s;
 }
 .navbar .nav-link {
   color: red;
-  margin-left: 3rem;
+  margin: 0 20px;
   padding: 10px 0 !important;
   font-size: 1.15rem;
 }
@@ -11307,6 +11307,10 @@ p.institucional {
   height: 100vh;
   padding-top: 10rem;
 }
+#contacto .contacto__container {
+  max-width: 1400px;
+  width: 90%;
+}
 #contacto .contacto__container .contacto__card {
   box-shadow: 0 0 15px #9c9c9c;
 }
@@ -11317,13 +11321,23 @@ p.institucional {
 #contacto .contacto__container .contacto__card .contacto__form h4, #contacto .contacto__container .contacto__card .contacto__form .h4 {
   font-weight: bold;
   margin-left: 10px;
+  font-size: 2rem;
 }
 #contacto .contacto__container .contacto__card .contacto__form form input {
   border-radius: 20px;
 }
+#contacto .contacto__container .contacto__card .contacto__form form input:focus {
+  background-color: #fff;
+  border-color: white;
+  outline: 0;
+  box-shadow: none;
+}
 #contacto .contacto__container .contacto__card .contacto__form form label, #contacto .contacto__container .contacto__card .contacto__form form span {
   margin-left: 10px;
   margin-bottom: 0.5rem;
+}
+#contacto .contacto__container .contacto__card .contacto__form form label span, #contacto .contacto__container .contacto__card .contacto__form form span span {
+  color: red;
 }
 #contacto .contacto__container .contacto__card .contacto__form form button {
   float: right;
@@ -11339,6 +11353,19 @@ p.institucional {
 #contacto .contacto__container .contacto__card .contacto__form form textarea {
   border-radius: 20px;
   margin-top: 1rem;
+}
+#contacto .contacto__container .contacto__card .contacto__form form .leyenda {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  #columnas .columnas__ondas--right {
+    bottom: 900px;
+  }
+  #columnas .columnas__ondas--left {
+    bottom: 350px;
+    left: -200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
