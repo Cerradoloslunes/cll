@@ -47,14 +47,30 @@
     }
 }
 
+/*Inicio*/
+
+.h1-inicio {
+    margin: 100px 0px 25px 0px;
+    font-weight: bold;
+    color: #000;
+}
+
 p {
     font-family: "Futura";
     font-weight: normal;
-    margin-bottom: 10px;
-    text-align: justify;
+    margin-bottom: 5px;
+    text-align: left;
 }
-p.institucional {
-    width: 60%;
+
+.cruz {
+    transform: translate(-35%, -25%);
+    max-width: 250%;
+}
+
+.ondas {
+    transform: rotate(-35deg) translate(-40%, -30%);;
+    max-width: 250%;
+    filter: saturate(130%);
 }
 
 .btn {
@@ -64,10 +80,11 @@ p.institucional {
     padding: 5px 10px;
     letter-spacing: 1.5px;
     font-size: 0.80rem;
+    font-weight: bold;
 }
 .btn-mis {
     background-color: $miselanias;
-    padding: 5px 20px;
+    padding: 5px 40px;
 }
 .btn-otros {
     background-color: inherit;

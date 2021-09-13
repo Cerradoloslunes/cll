@@ -1,9 +1,9 @@
 #welcome {
     height: 100vh; //lo puse al paso poder ajustar la navbar
-    background-color: $institucional;
+    background-image: url(../images/bg-gradient.png);
+    background-size: cover;
     .welcome__container {
         display: flex;
-        justify-content: center;
         align-items: center;
         height: 100%;
     }
