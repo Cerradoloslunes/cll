@@ -7830,11 +7830,15 @@ textarea.form-control-lg {
 
 #welcome {
   background-image: url(../images/bg-gradient.png);
-  background-size: cover; }
+  background-size: cover;
+  height: 110vh; }
   #welcome .welcome__container {
     display: flex;
     align-items: center;
     height: 100%; }
+  #welcome .welcome__info {
+    position: relative;
+    left: 13vw; }
 
 #columnas {
   padding-top: 10rem; }
@@ -7885,13 +7889,36 @@ p {
   text-align: left; }
 
 .cruz {
-  transform: translate(-35%, -25%);
-  max-width: 250%; }
+  position: absolute;
+  left: -7rem;
+  top: -5rem;
+  max-width: 26vw;
+  /*     transform: translate(-35%, -25%);
+    max-width: 250%; */ }
 
 .ondas {
-  transform: rotate(-35deg) translate(-40%, -30%);
-  max-width: 250%;
-  filter: saturate(130%); }
+  position: absolute;
+  top: 50vh;
+  left: -11rem;
+  transform: rotate(-35deg);
+  max-width: 30vw;
+  filter: saturate(130%);
+  /*     transform: rotate(-35deg) translate(-40%, -30%);;
+    max-width: 250%;
+    filter: saturate(130%); */ }
+
+.ondas-v {
+  position: absolute;
+  transform: rotate(145deg);
+  max-width: 30vw;
+  left: 85vw;
+  top: -8rem; }
+
+.formas-inicio {
+  position: absolute;
+  max-width: 50vw;
+  top: 41vh;
+  left: 55vw; }
 
 .btn {
   border-radius: 30px;
@@ -7921,6 +7948,14 @@ p {
 .escuchanos-icons {
   max-width: 25px; }
 
+/* .ondas-v {
+    max-width: 170%;
+    transform: rotate(145deg) translate(-290%, 20%);
+}
+
+.formas-inicio {
+    max-width: 50%;
+} */
 /* columnas */
 #columnas {
   position: relative;
