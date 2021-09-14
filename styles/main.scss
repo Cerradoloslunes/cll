@@ -87,10 +87,22 @@ p {
     padding: 5px 40px;
 }
 .btn-otros {
+    &:hover {
+        background-color: $miselanias;
+        color: #fff;
+    }
     background-color: inherit;
     border: 1px solid $miselanias;
 }
-    
+
+.escuchanos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    }
+.escuchanos-icons {
+    max-width: 25px;
+}
 
 /* columnas */
 #columnas {

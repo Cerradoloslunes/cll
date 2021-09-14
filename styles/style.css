@@ -7829,7 +7829,6 @@ textarea.form-control-lg {
     display: none !important; } }
 
 #welcome {
-  height: 100vh;
   background-image: url(../images/bg-gradient.png);
   background-size: cover; }
   #welcome .welcome__container {
@@ -7910,6 +7909,17 @@ p {
 .btn-otros {
   background-color: inherit;
   border: 1px solid #743FF7; }
+  .btn-otros:hover {
+    background-color: #743FF7;
+    color: #fff; }
+
+.escuchanos {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem; }
+
+.escuchanos-icons {
+  max-width: 25px; }
 
 /* columnas */
 #columnas {
