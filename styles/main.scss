@@ -106,6 +106,7 @@ p {
     letter-spacing: 1.5px;
     font-size: 0.80rem;
     font-weight: bold;
+    white-space: nowrap;
 }
 .btn-mis {
     background-color: $miselanias;
@@ -131,9 +132,9 @@ p {
 
 .circulo-verde {
     position: absolute;
-    width: 11.9vw;
+    width: 13vw;
     right: 7.96vw;
-    bottom: -10.9vh;
+    bottom: -33vh;
 }
 
 /* columnas */

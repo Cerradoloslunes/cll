@@ -7833,7 +7833,7 @@ textarea.form-control-lg {
   overflow: hidden;
   background-image: url(../images/bg-gradient.png);
   background-size: cover;
-  height: 100vh; }
+  height: 120vh; }
   #welcome .welcome__container {
     display: flex;
     align-items: center;
@@ -7928,7 +7928,8 @@ p {
   padding: 5px 10px;
   letter-spacing: 1.5px;
   font-size: 0.80rem;
-  font-weight: bold; }
+  font-weight: bold;
+  white-space: nowrap; }
 
 .btn-mis {
   background-color: #743FF7;
@@ -7951,9 +7952,9 @@ p {
 
 .circulo-verde {
   position: absolute;
-  width: 11.9vw;
+  width: 13vw;
   right: 7.96vw;
-  bottom: -10.9vh; }
+  bottom: -33vh; }
 
 /* columnas */
 #columnas {
