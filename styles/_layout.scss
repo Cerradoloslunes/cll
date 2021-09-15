@@ -1,7 +1,9 @@
 #welcome {
+    position: relative;
+    overflow: hidden;
     background-image: url(../images/bg-gradient.png);
     background-size: cover;
-    height: 110vh;
+    height: 100vh;
     .welcome__container {
         display: flex;
         align-items: center;

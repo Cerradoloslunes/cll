@@ -64,38 +64,38 @@ p {
 
 .cruz {
     position: absolute;
-    left: -7rem;
-    top: -5rem;
+    left: -7vw;
+    top: -13vh;
     max-width: 26vw;
-/*     transform: translate(-35%, -25%);
-    max-width: 250%; */
 }
 
 .ondas {
     position: absolute;
-    top: 50vh;
-    left: -11rem;
+    bottom: -10vh;
+    left: -10vw;
     transform: rotate(-35deg);
     max-width: 30vw;
     filter: saturate(130%);
-/*     transform: rotate(-35deg) translate(-40%, -30%);;
-    max-width: 250%;
-    filter: saturate(130%); */
 }
 
 .ondas-v {
     position: absolute;
     transform: rotate(145deg);
     max-width: 30vw;
-    left: 85vw;
-    top: -8rem;
+    right: -10vw;
+    top: -20vh;
 }
 
 .formas-inicio {
     position: absolute;
-    max-width: 50vw;
-    top: 41vh;
-    left: 55vw;
+    max-width: 45vw;
+    bottom: -10vh;
+    right: -5vw;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
 }
 
 .btn {
@@ -128,15 +128,6 @@ p {
 .escuchanos-icons {
     max-width: 25px;
 }
-
-/* .ondas-v {
-    max-width: 170%;
-    transform: rotate(145deg) translate(-290%, 20%);
-}
-
-.formas-inicio {
-    max-width: 50%;
-} */
 
 /* columnas */
 #columnas {
