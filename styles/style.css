@@ -7949,6 +7949,12 @@ p {
 .escuchanos-icons {
   max-width: 25px; }
 
+.circulo-verde {
+  position: absolute;
+  width: 11.9vw;
+  right: 7.96vw;
+  bottom: -10.9vh; }
+
 /* columnas */
 #columnas {
   position: relative;
