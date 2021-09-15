@@ -98,6 +98,13 @@ p {
     justify-content: space-around;
 }
 
+@media (max-width: 399.99px) {
+    .botones {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        }
+}
+
 .btn {
     border-radius: 30px;
     text-transform: uppercase;
@@ -359,6 +366,7 @@ p {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+
      /* Columnas */
      #columnas {
         .columnas__ondas--right {

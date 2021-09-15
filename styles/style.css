@@ -7839,8 +7839,13 @@ textarea.form-control-lg {
     align-items: center;
     height: 100%; }
   #welcome .welcome__info {
+    position: relative; }
+
+@media (min-width: 767.98px) {
+  /* Inicio */
+  .welcome__info {
     position: relative;
-    left: 13vw; }
+    left: 13vw; } }
 
 #columnas {
   padding-top: 10rem; }
@@ -7920,6 +7925,11 @@ p {
 .botones {
   display: flex;
   justify-content: space-around; }
+
+@media (max-width: 399.99px) {
+  .botones {
+    flex-wrap: wrap;
+    justify-content: flex-end; } }
 
 .btn {
   border-radius: 30px;

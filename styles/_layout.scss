@@ -11,6 +11,13 @@
     }
     .welcome__info {
         position: relative;
+    }
+}
+
+@media (min-width: 767.98px) {
+    /* Inicio */
+    .welcome__info {
+        position: relative;
         left: 13vw;
     }
 }
