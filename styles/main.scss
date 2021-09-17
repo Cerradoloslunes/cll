@@ -350,6 +350,7 @@ p {
 #quienes-somos {
     position: relative;
     overflow: hidden;
+    top: 300px;
     h2 {
         margin-left: 13%;
         margin-bottom: 1.4rem;
@@ -357,49 +358,49 @@ p {
         font-size: 2.4rem;
     }
 }
-
-/* talk bubble 
-.talk-bubble {
-	margin: 2rem;
-    padding: 1.5rem;
-    display: inline-block;
-    position: relative;
-	width: 40vw;
-	height: auto;
-	background-color: #fff;
-    box-shadow: -7px 10px 8px -4px rgba(113,113,113,0.75);
-}*/
-
-/* Right triangle, right side slightly down
-.tri-right.right-in:after{
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-left-color: #d6d6d6;
-	border-right: 0;
-	border-top: 0;
-	margin-top: -10px;
-	margin-right: -20px;
+.x-purple-left-top {
+    position: absolute;
+    left: -12rem;
+    top: 4rem;
 }
-.tri-right.left-in:after{
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-right-color: #d6d6d6;
-	border-left: 0;
-	border-top: 0;
-	margin-top: -10px;
-	margin-left: -20px;
+
+.waves-green-right-top {
+    position: absolute;
+    top: 20rem;
+    right: -15rem;
 }
- */
+
+.x-green-right-middle {
+    position: absolute;
+    top: 40rem;
+    right: -13rem;
+}
+
+.circle-green-left-middle {
+    position: absolute;
+    top: 60rem;
+    left: -16rem;
+}
+
+.x-purple-left-bottom {
+    position: absolute;
+    left: -13rem;
+    bottom: -80rem;
+}
+
+.circle-green-right-bottom {
+    position: absolute;
+    right: -15rem;
+    bottom: -115rem;
+}
+
+.x-purple-middle-bottom {
+    position: absolute;
+    right: 70%;
+    left: 30%;
+    bottom: -15rem;
+    transform: rotate(160deg);
+}
 
 .bubble-box-container {
     position: relative;
@@ -426,7 +427,6 @@ p {
     right: 2rem;
 }
 
-/* bubble-title */
 .bubble-title {
     font-family: 'Futura', sans-serif;
     font-weight: bold;
@@ -437,22 +437,21 @@ p {
 
 .bubble__right {
     text-align: right;
-}
 
-/* bubble-subtitle */
+}
 .bubble-subtitle {
     font-family: 'Futura', sans-serif;
     font-size: .7rem;
     color: $miselanias;
     font-style: italic;
 }
-/* bubble-text */
+
 .bubble-text {
     font-family: 'Futura', sans-serif;
     font-size: .7rem;
     color: rgba(51, 51, 51, 0.7);
 }
-/* bubble-links */
+
 .bubble-links {
     display: flex;
     padding-top: 1rem;
