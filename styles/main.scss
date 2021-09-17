@@ -358,7 +358,7 @@ p {
     }
 }
 
-/* talk bubble */
+/* talk bubble 
 .talk-bubble {
 	margin: 2rem;
     padding: 1.5rem;
@@ -368,9 +368,9 @@ p {
 	height: auto;
 	background-color: #fff;
     box-shadow: -7px 10px 8px -4px rgba(113,113,113,0.75);
-}
+}*/
 
-/* Right triangle, right side slightly down*/
+/* Right triangle, right side slightly down
 .tri-right.right-in:after{
 	content: '';
 	position: absolute;
@@ -398,6 +398,24 @@ p {
 	border-top: 0;
 	margin-top: -10px;
 	margin-left: -20px;
+}
+ */
+
+.bubble-box-container {
+    position: relative;
+}
+
+.bubble-box {
+    width: 100%;
+ }
+
+.bubble-content-container {
+    position: absolute;
+    top: 2rem;
+    right: 7rem;
+    left: 2rem;
+    bottom: 2rem;
+    padding: 1rem;
 }
 
 /* bubble-title */
@@ -430,11 +448,17 @@ p {
 .bubble-links {
     display: flex;
     justify-content: flex-end;
+    padding-top: 1rem;
+}
+
+.bubble-links-img {
+    width: 1.5rem;
+    margin: .5rem;
 }
 
 .bubble-img {
     position: relative;
-    left: -20%;
+    left: -10%;
 }
 
 .profile {
