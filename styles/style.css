@@ -8161,8 +8161,12 @@ p {
 .bubble-box-container {
   position: relative; }
 
+@media (max-width: 576px) {
+  .bubble-box {
+    height: 50vh; } }
+
 .bubble-box {
-  width: 100%; }
+  width: 120%; }
 
 .bubble-content-container {
   position: absolute;
@@ -8171,12 +8175,18 @@ p {
   padding: 1rem; }
 
 .bubble-content-container__left {
-  right: 7rem;
+  right: 2rem;
   left: 2rem; }
 
 .bubble-content-container__right {
-  left: 7rem;
+  left: 2.5rem;
   right: 2rem; }
+
+@media (min-width: 991.99px) {
+  .bubble-content-container__left {
+    right: 7rem; }
+  .bubble-content-container__right {
+    left: 7rem; } }
 
 .bubble-title {
   font-family: 'Futura', sans-serif;
@@ -8201,14 +8211,14 @@ p {
 
 .bubble-links {
   display: flex;
-  padding-top: 1rem; }
+  padding-top: .5rem; }
 
 .bubble-links__right {
   justify-content: flex-end; }
 
 .bubble-links-img {
-  width: 1.5rem;
-  margin: .5rem; }
+  width: 1rem;
+  margin: .3rem; }
 
 .bubble-img {
   position: relative; }
