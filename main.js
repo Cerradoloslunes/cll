@@ -4,7 +4,10 @@ $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(r
    var link = data.items[0].link;
    var id = link.substr(link.indexOf("=") + 1);
    $("#youtube_video").attr("href", "https://youtube.com/watch?v=" + id);
-   var url = `https://www.youtube.com/watch?v=${id}`;
+   var url = `https://www.youtube.com/embed/${id}`;
+
+   let embebed = document.getElementById("youtubeVideo");
+   embebed.src = url;
 
    /* Obtener título */
    $.getJSON('https://noembed.com/embed',
@@ -40,6 +43,7 @@ const scrollFunction = () => {
    if (document.body.scrollTop < 80 && document.documentElement.scrollTop < 80) {
       document.getElementById("logo").style.width = "290px";
       document.getElementById("navbar").style.paddingTop = "100px";
+      document.getElementById("navbar").style.backgroundColor = "initial";
    }
    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       document.getElementById("nav-link--inicio").style.display = "block";

@@ -9,18 +9,16 @@
     box-sizing: border-box;
 }
 
-
-
 /* navbar */
 .navbar {
-    z-index: 1;
+    z-index: 15;
     position: fixed;
     top: 0;
     padding-top: 100px;
     width: 100%;
     height: 100px;
-    transition:  all 0.3s;
-   
+    transition: all 0.3s;
+
     .navbar__container {
         width: 80%;
         position: relative;
@@ -36,7 +34,7 @@
     .nav-link {
         color: red;
         margin: 0 20px;
-        padding: 10px 0!important;
+        padding: 10px 0 !important;
         font-size: 1.15rem;
     }
     .active {
@@ -102,7 +100,7 @@ p {
     .botones {
         flex-wrap: wrap;
         justify-content: flex-end;
-        }
+    }
 }
 
 .btn {
@@ -111,7 +109,7 @@ p {
     color: #fff;
     padding: 5px 10px;
     letter-spacing: 1.5px;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -132,7 +130,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin-left: 1.5rem;
-    }
+}
 .escuchanos-icons {
     width: 35px;
 }
@@ -209,35 +207,117 @@ p {
         }
         .columnas__card--2 {
             &:hover {
-                box-shadow: 0px 0px 10px $en_contramano ;
+                box-shadow: 0px 0px 10px $en_contramano;
             }
         }
         .columnas__card--3 {
             &:hover {
-                box-shadow: 0px 0px 10px $viaja_sentado ;
+                box-shadow: 0px 0px 10px $viaja_sentado;
             }
         }
         .columnas__card--4 {
             &:hover {
-                box-shadow: 0px 0px 10px $historias_retro ;
+                box-shadow: 0px 0px 10px $historias_retro;
             }
         }
         .columnas__card--5 {
             &:hover {
-                box-shadow: 0px 0px 10px $fuera_de_toma ;
+                box-shadow: 0px 0px 10px $fuera_de_toma;
             }
         }
-        
-        
     }
 }
 
 /* VIDEO */
 
+#video {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    h2 {
+        margin-left: 13%;
+        margin-bottom: 6rem;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+    .videoContainer {
+        display: flex;
+        justify-content: center;
+        .videoRelative {
+            position: relative;
+
+            .iframeContainer {
+                width: 780px;
+                height: 530px;
+                iframe {
+                    padding: 18px;
+                    position: absolute;
+                }    
+            }
+            .borde {
+                z-index: -2;
+                width: 780px;
+                height: 530px;
+                padding: 18px;
+                position: absolute;
+                border: 2.4px solid $institucional;
+                border-radius: 20px;
+            }
+
+            img {
+                position: absolute;
+                z-index: -1;
+            }
+    
+            .circulo--violeta {
+                width: 120px;
+                top: -5%;
+                left: -5%;
+            }
+    
+            .ondas--verdes {
+                width: 300px;
+                left: -12%;
+                top: 10%;
+            }
+    
+            .ondas--violetas {
+                width: 430px;
+                right: -35%;
+                top: -20%;
+            }
+    
+            .cruz--violeta {
+                width: 165px;
+                top: 40%;
+                right: -20%;
+            }
+    
+            .ondas__bottom--verdes {
+                width: 330px;
+                bottom: 5%;
+                right: -15%;
+                transform: rotate(0.08turn);
+            }
+    
+            .circulo__bottom--verde {
+                width: 110px;
+                bottom: -7%;
+                right: -4%;
+            }
+    
+            .cruz__bottom {
+                width: 650px;
+                bottom: -40%;
+                left: -37%;
+            }
+        }
+    }
+}
+
 /* CONTACTO */
 #contacto {
-    height: 180vh;
-    padding-top: 10rem;
+    margin-top: 13rem;
+    margin-bottom: 10rem;
     .contacto__container {
         max-width: 1400px;
         width: 90%;
@@ -306,7 +386,8 @@ p {
                             box-shadow: none;
                         }
                     }
-                    label,span {
+                    label,
+                    span {
                         margin-left: 10px;
                         margin-bottom: 0.5rem;
                         font-size: 1.15rem;
@@ -337,15 +418,6 @@ p {
         }
     }
 }
-
-
-
-
-
-
-
-
-
 
 /* quienes somos */
 #quienes-somos {
@@ -415,7 +487,7 @@ p {
 
 .bubble-box {
     width: 120%;
- }
+}
 
 .bubble-content-container {
     position: absolute;
@@ -444,7 +516,7 @@ p {
 }
 
 .bubble-title {
-    font-family: 'Futura', sans-serif;
+    font-family: "Futura", sans-serif;
     font-weight: bold;
     font-size: 1rem;
     color: #000;
@@ -453,24 +525,23 @@ p {
 
 .bubble__right {
     text-align: right;
-
 }
 .bubble-subtitle {
-    font-family: 'Futura', sans-serif;
-    font-size: .7rem;
+    font-family: "Futura", sans-serif;
+    font-size: 0.7rem;
     color: $miselanias;
     font-style: italic;
 }
 
 .bubble-text {
-    font-family: 'Futura', sans-serif;
-    font-size: .7rem;
+    font-family: "Futura", sans-serif;
+    font-size: 0.7rem;
     color: rgba(51, 51, 51, 0.7);
 }
 
 .bubble-links {
     display: flex;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
 }
 
 .bubble-links__right {
@@ -479,7 +550,7 @@ p {
 
 .bubble-links-img {
     width: 1rem;
-    margin: .3rem;
+    margin: 0.3rem;
 }
 
 .bubble-img {
@@ -492,7 +563,6 @@ p {
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-
     /* Navbar */
     #navbar {
         .navbar-brand__logo {
@@ -503,24 +573,21 @@ p {
         }
     }
 
-     /* Columnas */
-     #columnas {
-
+    /* Columnas */
+    #columnas {
         .columnas__circulo--left {
             left: -70px;
         }
         .columnas__ondas--right {
             right: -220px;
         }
-
     }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-
-     /* Columnas */
-     #columnas {
+    /* Columnas */
+    #columnas {
         .columnas__ondas--right {
             bottom: 900px;
         }
@@ -533,21 +600,21 @@ p {
     #contacto {
         .contacto__container {
             width: 100%;
-           .contacto__card {
-               box-shadow: none;
+            .contacto__card {
+                box-shadow: none;
                 .contacto__info {
                     height: 80vh;
                 }
                 .contacto__form {
                     padding: 80px 50px;
                 }
-           }
+            }
         }
     }
- }
+}
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
     /* columnas */
     #columnas {
         .columnas__ondas--left {
@@ -557,20 +624,22 @@ p {
 
     #contacto {
         .contacto__container {
-           .contacto__card {
+            .contacto__card {
                 .contacto__info {
                     height: 70vh;
                 }
-           }
+            }
         }
     }
 }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { }
+@media (max-width: 1199.98px) {
+}
 
 // X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { }
+@media (max-width: 1399.98px) {
+}
 
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
