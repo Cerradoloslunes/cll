@@ -103,9 +103,12 @@
             <p>Ivo te muestra las mejores recomendaciones sobre cine y series</p>
           </div>
         </div>
-
       </div>
     </div>
+  </section>
+
+  <section id="video">
+
   </section>
 
   <section id="contacto">
@@ -114,7 +117,7 @@
         <div class="col contacto__info">
           <div class="info__img">
             <img src="./images/contacto-foto.png" alt="">
-            <p>Todos los lunes de 13.00 a 15.00hs</p>
+            <p>Todos los lunes de 13.00 a 14.00hs</p>
           </div>
           <div class="contacto__redes">
             <p>Seguinos en nuestras redes</p>
@@ -149,7 +152,7 @@
         </div>
         <div class="col contacto__form">
           <h4 class="mb-3">Envíanos un mensaje</h4>
-          <form action="">
+          <form method="post" action="https://formspree.io/f/mjvjlree">
             <div class="mb-4">
               <label for="nombre" class="form-label">Nombre y apellido <span>*</span></label>
               <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -171,7 +174,7 @@
             <span>Mensaje <span style="color: red;">*</span></span>
             <div class="mb-3 form-floating">
               <label class="mt-3" style="color: rgb(146, 146, 146);">Tu mensaje aquí...</label>
-              <textarea class="form-control" placeholder="Tu mensaje aquí" id="floatingTextarea2" style="height: 100px"
+              <textarea name="texto" class="form-control" placeholder="Tu mensaje aquí" id="floatingTextarea2" style="height: 100px"
                 required></textarea>
             </div>
             <p class="leyenda"><span style="color: red;">*</span> Campos obligatorios</p>
