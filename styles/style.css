@@ -7924,7 +7924,7 @@ p {
 
 .botones {
   display: flex;
-  justify-content: space-around; }
+  justify-content: flex-start; }
 
 @media (max-width: 399.99px) {
   .botones {
@@ -7958,7 +7958,7 @@ p {
   margin-left: 1.5rem; }
 
 .escuchanos-icons {
-  max-width: 25px; }
+  width: 30px; }
 
 .circulo-verde {
   position: absolute;
@@ -8120,6 +8120,10 @@ p {
     margin-bottom: 1.4rem;
     font-weight: bold;
     font-size: 2.4rem; }
+
+.bg-misc {
+  position: absolute;
+  overflow: hidden; }
 
 .x-purple-left-top {
   position: absolute;
