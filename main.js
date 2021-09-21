@@ -42,7 +42,7 @@ const scrollFunction = () => {
    }
    if (document.body.scrollTop < 80 && document.documentElement.scrollTop < 80) {
       document.getElementById("logo").style.width = "290px";
-      document.getElementById("navbar").style.paddingTop = "100px";
+      document.getElementById("navbar").style.paddingTop = "70px";
       document.getElementById("navbar").style.backgroundColor = "initial";
    }
    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {

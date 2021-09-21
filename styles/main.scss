@@ -14,7 +14,7 @@
     z-index: 15;
     position: fixed;
     top: 0;
-    padding-top: 100px;
+    padding-top: 70px;
     width: 100%;
     transition: all 0.3s;
 
@@ -588,128 +588,33 @@ p {
             left: -200px;
         }
     }
+
 }
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+    .navbar {
+        .navbar-brand__logo {
+            margin-left: 20px!important;
+        }
+        .nav-link {
+            margin: 0.7rem;
+        }
+    }
 }
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-    /* Columnas */
-    #columnas {
-        .columnas__ondas--right {
-            bottom: 900px;
-        }
-        .columnas__ondas--left {
-            bottom: 350px;
-            left: -200px;
-        }
-    }
-
-    #video {
-        .videoContainer {
-            .videoRelative {
-                .iframeContainer {
-                    width: 470px;
-                    height: 346px;
-                    iframe {
-                        width: 450px;
-                        height: 330px;
-                    }
-                }
-                .borde {
-                    z-index: -2;
-                    width: 450px;
-                    height: 330px;
-                    padding: 18px;
-                    position: absolute;
-                    border: 2.4px solid $institucional;
-                    border-radius: 20px;
-                }
-
-                img {
-                    position: absolute;
-                    z-index: -1;
-                }
-
-                .circulo--violeta {
-                    width: 60px;
-                    top: -3%;
-                    left: -3%;
-                }
-
-                .ondas--verdes {
-                    width: 150px;
-                    left: -6%;
-                    top: 14%;
-                }
-
-                .ondas--violetas {
-                    width: 215px;
-                    right: -25%;
-                    top: -14%;
-                }
-
-                .cruz--violeta {
-                    width: 80px;
-                    top: 40%;
-                    right: -14%;
-                }
-
-                .ondas__bottom--verdes {
-                    width: 110px;
-                    bottom: 5%;
-                    right: -15%;
-                    transform: rotate(0.08turn);
-                }
-
-                .circulo__bottom--verde {
-                    width: 55px;
-                    bottom: -4%;
-                    right: -3%;
-                }
-
-                .cruz__bottom {
-                    width: 300px;
-                    bottom: -30%;
-                    left: -25%;
-                }
-            }
-        }
-    }
-
-    #contacto {
-        margin-bottom: 0;
-        .contacto__container {
-            width: 100%;
-            .contacto__card {
-                box-shadow: none;
-                .contacto__form {
-                    padding: 80px 30px;
-                    .leyenda {
-                        text-align: left;
-                    }
-                    .submitContainer {
-                        display: flex;
-                        justify-content: center;
-                        button {
-                            margin-top: 2rem;
-                            float: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    .navbar {
+        .navbar-brand__logo {
+            margin-left: 0!important;
+        }
+    }
     /* Navbar */
     #navbar {
         .navbar-brand__logo {
@@ -843,6 +748,117 @@ p {
         }
         .columnas__ondas--right {
             right: -220px;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    /* Columnas */
+    #columnas {
+        .columnas__ondas--right {
+            bottom: 900px;
+        }
+        .columnas__ondas--left {
+            bottom: 350px;
+            left: -200px;
+        }
+    }
+
+    #video {
+        .videoContainer {
+            .videoRelative {
+                .iframeContainer {
+                    width: 470px;
+                    height: 346px;
+                    iframe {
+                        width: 450px;
+                        height: 330px;
+                    }
+                }
+                .borde {
+                    z-index: -2;
+                    width: 450px;
+                    height: 330px;
+                    padding: 18px;
+                    position: absolute;
+                    border: 2.4px solid $institucional;
+                    border-radius: 20px;
+                }
+
+                img {
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                .circulo--violeta {
+                    width: 60px;
+                    top: -3%;
+                    left: -3%;
+                }
+
+                .ondas--verdes {
+                    width: 150px;
+                    left: -6%;
+                    top: 14%;
+                }
+
+                .ondas--violetas {
+                    width: 215px;
+                    right: -25%;
+                    top: -14%;
+                }
+
+                .cruz--violeta {
+                    width: 80px;
+                    top: 40%;
+                    right: -14%;
+                }
+
+                .ondas__bottom--verdes {
+                    width: 110px;
+                    bottom: 5%;
+                    right: -15%;
+                    transform: rotate(0.08turn);
+                }
+
+                .circulo__bottom--verde {
+                    width: 55px;
+                    bottom: -4%;
+                    right: -3%;
+                }
+
+                .cruz__bottom {
+                    width: 300px;
+                    bottom: -30%;
+                    left: -25%;
+                }
+            }
+        }
+    }
+
+    #contacto {
+        margin-bottom: 0;
+        .contacto__container {
+            width: 100%;
+            .contacto__card {
+                box-shadow: none;
+                .contacto__form {
+                    padding: 80px 30px;
+                    .leyenda {
+                        text-align: left;
+                    }
+                    .submitContainer {
+                        display: flex;
+                        justify-content: center;
+                        button {
+                            margin-top: 2rem;
+                            float: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
