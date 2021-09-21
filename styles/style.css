@@ -11177,7 +11177,6 @@ textarea.form-control-lg {
   top: 0;
   padding-top: 100px;
   width: 100%;
-  height: 100px;
   transition: all 0.3s;
 }
 .navbar .navbar__container {
@@ -11541,6 +11540,16 @@ p {
   outline: 0;
   box-shadow: none;
 }
+#contacto .contacto__container .contacto__card .contacto__form form textarea {
+  padding: 20px;
+  border: none;
+}
+#contacto .contacto__container .contacto__card .contacto__form form textarea:focus {
+  background-color: #fff;
+  border-color: white;
+  outline: 0;
+  box-shadow: none;
+}
 #contacto .contacto__container .contacto__card .contacto__form form label,
 #contacto .contacto__container .contacto__card .contacto__form form span {
   margin-left: 10px;
@@ -11802,10 +11811,13 @@ p {
   #contacto .contacto__container .contacto__card .contacto__form .leyenda {
     text-align: left;
   }
-  #contacto .contacto__container .contacto__card .contacto__form button {
-    float: none !important;
-    margin-left: 20%;
-    margin-top: 1.5rem;
+  #contacto .contacto__container .contacto__card .contacto__form .submitContainer {
+    display: flex;
+    justify-content: center;
+  }
+  #contacto .contacto__container .contacto__card .contacto__form .submitContainer button {
+    margin-top: 2rem;
+    float: none;
   }
 }
 @media (max-width: 575.98px) {
