@@ -11496,6 +11496,7 @@ p {
   color: #743FF7;
 }
 #contacto .contacto__container .contacto__card .contacto__info .contacto__redes {
+  height: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -11511,8 +11512,12 @@ p {
 #contacto .contacto__container .contacto__card .contacto__info .contacto__redes .redes__lista {
   list-style: none;
   display: flex;
+  align-items: center;
   padding: 0;
   margin-top: 1rem;
+}
+#contacto .contacto__container .contacto__card .contacto__info .contacto__redes .redes__lista .youtube--black {
+  width: 45px;
 }
 #contacto .contacto__container .contacto__card .contacto__info .contacto__redes .redes__lista li {
   margin: 0 1rem;
@@ -11713,10 +11718,6 @@ p {
   #columnas .columnas__ondas--left {
     left: -200px;
   }
-
-  #contacto .contacto__container .contacto__card .contacto__info {
-    height: 70vh;
-  }
 }
 @media (max-width: 767.98px) {
   /* Columnas */
@@ -11729,8 +11730,8 @@ p {
   }
 
   #video .videoContainer .videoRelative .iframeContainer {
-    width: 450px;
-    height: 330px;
+    width: 470px;
+    height: 346px;
   }
   #video .videoContainer .videoRelative .iframeContainer iframe {
     width: 450px;
@@ -11795,11 +11796,16 @@ p {
   #contacto .contacto__container .contacto__card {
     box-shadow: none;
   }
-  #contacto .contacto__container .contacto__card .contacto__info {
-    height: 80vh;
-  }
   #contacto .contacto__container .contacto__card .contacto__form {
-    padding: 80px 50px;
+    padding: 80px 30px;
+  }
+  #contacto .contacto__container .contacto__card .contacto__form .leyenda {
+    text-align: left;
+  }
+  #contacto .contacto__container .contacto__card .contacto__form button {
+    float: none !important;
+    margin-left: 20%;
+    margin-top: 1.5rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -11812,11 +11818,20 @@ p {
   }
 
   /* Contacto */
+  #contacto .info__img p {
+    font-size: 1.2rem !important;
+  }
   #contacto p {
     text-align: center;
   }
   #contacto .redes__lista img {
     width: 1.7rem;
+  }
+  #contacto .redes__lista .youtube--black {
+    width: 35px !important;
+  }
+  #contacto .redes__lista li {
+    margin: 0 0.6rem !important;
   }
 
   #video {

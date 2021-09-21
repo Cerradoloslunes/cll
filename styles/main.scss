@@ -255,7 +255,7 @@ p {
                     height: 530px;
                     padding: 18px;
                     position: absolute;
-                }    
+                }
             }
             .borde {
                 z-index: -2;
@@ -271,44 +271,44 @@ p {
                 position: absolute;
                 z-index: -1;
             }
-    
+
             .circulo--violeta {
                 width: 120px;
                 top: -5%;
                 left: -5%;
             }
-    
+
             .ondas--verdes {
                 width: 300px;
                 left: -12%;
                 top: 10%;
             }
-    
+
             .ondas--violetas {
                 width: 430px;
                 right: -35%;
                 top: -20%;
             }
-    
+
             .cruz--violeta {
                 width: 165px;
                 top: 40%;
                 right: -20%;
             }
-    
+
             .ondas__bottom--verdes {
                 width: 330px;
                 bottom: 5%;
                 right: -15%;
                 transform: rotate(0.08turn);
             }
-    
+
             .circulo__bottom--verde {
                 width: 110px;
                 bottom: -7%;
                 right: -4%;
             }
-    
+
             .cruz__bottom {
                 width: 650px;
                 bottom: -40%;
@@ -349,6 +349,7 @@ p {
                     }
                 }
                 .contacto__redes {
+                    height: 200px;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
@@ -363,8 +364,12 @@ p {
                     .redes__lista {
                         list-style: none;
                         display: flex;
+                        align-items: center;
                         padding: 0;
                         margin-top: 1rem;
+                        .youtube--black {
+                            width: 45px;
+                        }
                         li {
                             margin: 0 1rem;
                         }
@@ -380,6 +385,7 @@ p {
                     font-size: 2rem;
                 }
                 form {
+                   
                     input {
                         border-radius: 30px;
                         height: 3rem;
@@ -565,24 +571,12 @@ p {
     width: 90%;
 }
 
-
-
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
     /* columnas */
     #columnas {
         .columnas__ondas--left {
             left: -200px;
-        }
-    }
-
-    #contacto {
-        .contacto__container {
-            .contacto__card {
-                .contacto__info {
-                    height: 70vh;
-                }
-            }
         }
     }
 }
@@ -609,18 +603,15 @@ p {
     }
 
     #video {
-        h2 {
-        }
         .videoContainer {
             .videoRelative {
-    
                 .iframeContainer {
-                    width: 450px;
-                    height: 330px;
+                    width: 470px;
+                    height: 346px;
                     iframe {
                         width: 450px;
                         height: 330px;
-                    }    
+                    }
                 }
                 .borde {
                     z-index: -2;
@@ -631,49 +622,49 @@ p {
                     border: 2.4px solid $institucional;
                     border-radius: 20px;
                 }
-    
+
                 img {
                     position: absolute;
                     z-index: -1;
                 }
-        
+
                 .circulo--violeta {
                     width: 60px;
                     top: -3%;
                     left: -3%;
                 }
-        
+
                 .ondas--verdes {
                     width: 150px;
                     left: -6%;
                     top: 14%;
                 }
-        
+
                 .ondas--violetas {
                     width: 215px;
                     right: -25%;
                     top: -14%;
                 }
-        
+
                 .cruz--violeta {
                     width: 80px;
                     top: 40%;
                     right: -14%;
                 }
-        
+
                 .ondas__bottom--verdes {
                     width: 110px;
                     bottom: 5%;
                     right: -15%;
                     transform: rotate(0.08turn);
                 }
-        
+
                 .circulo__bottom--verde {
                     width: 55px;
                     bottom: -4%;
                     right: -3%;
                 }
-        
+
                 .cruz__bottom {
                     width: 300px;
                     bottom: -30%;
@@ -689,11 +680,17 @@ p {
             width: 100%;
             .contacto__card {
                 box-shadow: none;
-                .contacto__info {
-                    height: 80vh;
-                }
                 .contacto__form {
-                    padding: 80px 50px;
+                    padding: 80px 30px;
+                    .leyenda {
+                        text-align: left;
+                    }
+                    button {
+                        float: none!important;
+                        margin-left: 20%;
+                        margin-top: 1.5rem;
+
+                    }
                 }
             }
         }
@@ -714,16 +711,29 @@ p {
 
     /* Contacto */
     #contacto {
+        .info__img {
+            p {
+                font-size: 1.2rem!important;
+            }
+        }
         p {
             text-align: center;
         }
         .redes__lista {
+
             img {
                 width: 1.7rem;
             }
+            .youtube--black {
+                width: 35px!important;
+            }
+            li {
+                margin: 0 0.6rem!important;
+            }
         }
-    }
 
+        
+    }
 
     #video {
         margin-bottom: 0;
@@ -733,14 +743,14 @@ p {
             font-size: 1.7rem;
         }
         .videoContainer {
-            .videoRelative { 
+            .videoRelative {
                 .iframeContainer {
                     width: 300px;
                     height: 230px;
                     iframe {
                         width: 300px;
                         height: 230px;
-                    }    
+                    }
                 }
                 .borde {
                     z-index: -2;
@@ -751,49 +761,49 @@ p {
                     border: 2.4px solid $institucional;
                     border-radius: 20px;
                 }
-    
+
                 img {
                     position: absolute;
                     z-index: -1;
                 }
-        
+
                 .circulo--violeta {
                     width: 60px;
                     top: -3%;
                     left: -3%;
                 }
-        
+
                 .ondas--verdes {
                     width: 150px;
                     left: -6%;
                     top: 14%;
                 }
-        
+
                 .ondas--violetas {
                     width: 215px;
                     right: -25%;
                     top: -14%;
                 }
-        
+
                 .cruz--violeta {
                     width: 80px;
                     top: 40%;
                     right: -14%;
                 }
-        
+
                 .ondas__bottom--verdes {
                     width: 110px;
                     bottom: 5%;
                     right: -15%;
                     transform: rotate(0.08turn);
                 }
-        
+
                 .circulo__bottom--verde {
                     width: 55px;
                     bottom: -4%;
                     right: -3%;
                 }
-        
+
                 .cruz__bottom {
                     width: 300px;
                     bottom: -30%;
@@ -812,11 +822,11 @@ p {
 
         .columnas__card {
             h3 {
-                font-size: 1.8rem!important;
+                font-size: 1.8rem !important;
                 text-align: center;
             }
         }
-      
+
         .columnas__circulo--left {
             left: -70px;
         }
@@ -825,9 +835,3 @@ p {
         }
     }
 }
-
-
-
-
-// XX-Large devices (larger desktops)
-// No media query since the xxl breakpoint has no upper bound on its width
