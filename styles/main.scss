@@ -59,6 +59,10 @@ p {
     text-align: left;
 }
 
+.container-misc {
+    overflow: hidden;
+}
+
 .cruz {
     position: absolute;
     left: -7vw;
@@ -91,7 +95,7 @@ p {
 @media (min-width: 600px) {
 .formas-inicio {
     position: absolute;
-    bottom: -10vh;
+    bottom: -10%;
     right: -5vw;
     max-width: 70vw;
     visibility: visible;
@@ -172,7 +176,7 @@ p {
     position: absolute;
     width: 0px;
     right: 7.96vw;
-    bottom: -33vh;
+    bottom: 0px;
 }
 
 @media (min-width: 600px) {

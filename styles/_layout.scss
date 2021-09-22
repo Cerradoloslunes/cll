@@ -1,13 +1,12 @@
 #welcome {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     background-image: url(../images/bg-gradient.png);
     background-size: cover;
-    height: 170vh;
     .welcome__container {
         display: flex;
         position: relative;
-        top: 150px;
+        margin-top: 150px;
         height: 100%;
     }
     .welcome__info {
@@ -15,7 +14,7 @@
     }
 }
 
-@media (min-height: 600px) {
+/* @media (min-height: 600px) {
     #welcome {
         height: 120vh;
     }
@@ -31,7 +30,7 @@
     #welcome {
         height: 70vh;
     }
-}
+} */
 
 /* @media (max-height: 949.99) {
     #welcome {
