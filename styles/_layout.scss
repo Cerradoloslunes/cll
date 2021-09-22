@@ -3,10 +3,11 @@
     overflow: hidden;
     background-image: url(../images/bg-gradient.png);
     background-size: cover;
-    height: 120vh;
+    height: 170vh;
     .welcome__container {
         display: flex;
-        align-items: center;
+        position: relative;
+        top: 150px;
         height: 100%;
     }
     .welcome__info {
@@ -14,6 +15,30 @@
     }
 }
 
+@media (min-height: 600px) {
+    #welcome {
+        height: 120vh;
+    }
+}
+
+@media (min-height: 700px) {
+    #welcome {
+        height: 100vh;
+    }
+}
+
+@media (min-height: 950px) {
+    #welcome {
+        height: 70vh;
+    }
+}
+
+/* @media (max-height: 949.99) {
+    #welcome {
+    height: 100vh;
+    }
+}
+ */
 @media (min-width: 767.98px) {
     /* Inicio */
     .welcome__info {
