@@ -99,6 +99,13 @@ p {
     max-width: 1px;
 }
 
+.circulo-verde {
+    position: absolute;
+    width: 0px;
+    right: 7.96vw;
+    bottom: 0px;
+}
+
 @media (min-width: 600px) {
 .formas-inicio {
     position: absolute;
@@ -107,11 +114,24 @@ p {
     max-width: 70vw;
     visibility: visible;
     }
+
+    .circulo-verde {
+        width: 20vw;
+        right: 13vw;
+        bottom: -15vh;
+        }
 }
 
 @media (min-width: 1024px) {
     .formas-inicio {
         max-width: 45vw;
+    }
+
+    .circulo-verde {
+        position: absolute;
+        width: 13vw;
+        right: 10vw;
+        bottom: -15vh;
     }
 }
 
@@ -159,6 +179,28 @@ p {
     justify-content: space-between;
     margin-left: 1.5rem;
 }
+
+@media (max-width: 575px) {
+    .escuchanos {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .botones {
+        justify-content: center;
+    }
+
+    .cruz {
+        left: -8%;
+        top: -8vh;
+        max-width: 35vh;
+    }
+
+    .ondas-v {
+        top: -10vh;
+        }
+}
+
 .escuchanos-icons {
     width: 30px;
     position: relative;
@@ -178,22 +220,6 @@ p {
 
 .escuchanos-icons:hover .escuchanos-white {
     opacity: 1;
-}
-
-.circulo-verde {
-    position: absolute;
-    width: 0px;
-    right: 7.96vw;
-    bottom: 0px;
-}
-
-@media (min-width: 600px) {
-    .circulo-verde {
-        position: absolute;
-        width: 13vw;
-        right: 10vw;
-        bottom: -15vh;
-    }
 }
 
 /* columnas */
