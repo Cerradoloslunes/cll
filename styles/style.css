@@ -7919,6 +7919,12 @@ p {
 .container-misc {
   overflow: hidden; }
 
+.container-misc-second {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
 .cruz {
   position: absolute;
   left: -7vw;
@@ -7947,7 +7953,7 @@ p {
 @media (min-width: 600px) {
   .formas-inicio {
     position: absolute;
-    bottom: -10%;
+    bottom: -15vh;
     right: -5vw;
     max-width: 70vw;
     visibility: visible; } }
@@ -7996,7 +8002,8 @@ p {
 
 .escuchanos-icons {
   width: 30px;
-  position: relative; }
+  position: relative;
+  margin: 0 0.5rem 0 0.5rem; }
 
 .escuchanos-icons .escuchanos-white {
   width: 30px;
@@ -8021,8 +8028,8 @@ p {
   .circulo-verde {
     position: absolute;
     width: 13vw;
-    right: 7.96vw;
-    bottom: -33vh; } }
+    right: 10vw;
+    bottom: -15vh; } }
 
 /* columnas */
 #columnas {
