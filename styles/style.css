@@ -8400,6 +8400,9 @@ p {
 .profile {
   width: 90%; }
 
+.video-page {
+  padding-top: 12rem; }
+
 @media (max-width: 991.98px) {
   /* columnas */
   #columnas .columnas__ondas--left {
