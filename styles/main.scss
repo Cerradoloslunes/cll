@@ -609,18 +609,18 @@ p {
 }
 
 .bubble-content-container__right {
-    left: 2.5rem;
+    left: 7rem;
     right: 2rem;
 }
 
-@media (max-width: 991.99px) {
-/*     .bubble-content-container__left {
+/*@media (max-width: 991.99px) {
+     .bubble-content-container__left {
         right: 7rem;
-    } */
+    } 
     .bubble-content-container__right {
         left: 7rem;
     }
-}
+}*/
 
 @media (max-width: 576px) {
     .bubble-content-container__left {
