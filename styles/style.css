@@ -11621,6 +11621,9 @@ p {
 #contacto .contacto__container .contacto__card .contacto__info .contacto__redes .redes__lista li {
   margin: 0 1rem;
 }
+#contacto .contacto__container .contacto__card .contacto__info .contacto__redes .cafecito {
+  margin-top: 1rem;
+}
 #contacto .contacto__container .contacto__card .contacto__form {
   background-color: #00DAA1;
   padding: 130px 120px 50px 80px;
