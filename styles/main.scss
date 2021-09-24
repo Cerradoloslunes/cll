@@ -604,13 +604,47 @@ p {
 }
 
 .bubble-content-container__left {
-    right: 2rem;
-    left: 2rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px;
+}
+
+@media (min-width: 992px) {
+    .bubble-content-container__left:after {
+        content: "";
+        background-image: url(../images/tri-right.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 60%;
+        left: 100%;
+        right: 0;
+        bottom: 0;
+        width: 13%;
+    }
 }
 
 .bubble-content-container__right {
-    left: 7rem;
-    right: 2rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px;
+}
+
+@media (min-width: 992px) {
+    .bubble-content-container__right:after {
+        content: "";
+        background-image: url(../images/tri-left.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 60%;
+        left: -13%;
+        right: 0;
+        bottom: 0;
+        width: 13%;
+    }
 }
 
 /*@media (max-width: 991.99px) {
@@ -628,7 +662,7 @@ p {
         right: 0;
     }
     .bubble-content-container__right {
-        left: 2.5rem;
+        left: 0;
         right: 0;
     }
 }
@@ -636,7 +670,7 @@ p {
 .bubble-title {
     font-family: "Futura", sans-serif;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #000;
     text-transform: capitalize;
 }
@@ -646,14 +680,14 @@ p {
 }
 .bubble-subtitle {
     font-family: "Futura", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: $miselanias;
     font-style: italic;
 }
 
 .bubble-text {
     font-family: "Futura", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: rgba(51, 51, 51, 0.7);
 }
 
@@ -667,12 +701,13 @@ p {
 }
 
 .bubble-links-img {
-    width: 1rem;
+    width: 1.5rem;
     margin: 0.3rem;
 }
 
 .bubble-img {
     position: relative;
+    padding-top: 3rem;
 }
 
 .profile {
