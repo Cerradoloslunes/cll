@@ -18,6 +18,8 @@
     width: 100%;
     transition: all 0.3s;
 
+  
+
     .navbar__container {
         width: 80%;
         position: relative;
@@ -42,6 +44,7 @@
     .nav-link--inicio {
         display: none;
     }
+    
 }
 
 /*Inicio*/
@@ -107,19 +110,19 @@ p {
 }
 
 @media (min-width: 600px) {
-.formas-inicio {
-    position: absolute;
-    bottom: -15vh;
-    right: -5vw;
-    max-width: 70vw;
-    visibility: visible;
+    .formas-inicio {
+        position: absolute;
+        bottom: -15vh;
+        right: -5vw;
+        max-width: 70vw;
+        visibility: visible;
     }
 
     .circulo-verde {
         width: 20vw;
         right: 13vw;
         bottom: -15vh;
-        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -198,13 +201,13 @@ p {
 
     .ondas-v {
         top: -10vh;
-        }
+    }
 }
 
 .escuchanos-icons {
     width: 30px;
     position: relative;
-    margin: 0 0.5rem 0 0.5rem
+    margin: 0 0.5rem 0 0.5rem;
 }
 
 .escuchanos-icons .escuchanos-white {
@@ -215,7 +218,7 @@ p {
     left: 0;
     bottom: 0;
     opacity: 0;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
 }
 
 .escuchanos-icons:hover .escuchanos-white {
@@ -465,7 +468,6 @@ p {
                     font-size: 2rem;
                 }
                 form {
-                   
                     input {
                         border-radius: 30px;
                         height: 3rem;
@@ -704,7 +706,7 @@ p {
     width: 1.5rem;
     margin: 0.3rem;
     &:hover {
-        fill:#000;
+        fill: #000;
     }
 }
 
@@ -721,45 +723,16 @@ p {
     padding-top: 12rem;
 }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-    /* columnas */
-    #columnas {
-        .columnas__ondas--left {
-            left: -200px;
-        }
-    }
-
-    .profile {
-        width: 100%;
-    }
-
-}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-    .navbar {
-        .navbar-brand__logo {
-            margin-left: 20px!important;
-        }
-        .nav-link {
-            margin: 0.7rem;
-        }
-    }
-}
-
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {
-}
-
-
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .navbar {
-        .navbar-brand__logo {
-            margin-left: 0!important;
+    .navbar { 
+        padding-top: 20px;  
+        .navbar-brand {
+            .navbar-brand__logo {
+            }
         }
     }
+    
     /* Navbar */
     #navbar {
         .navbar-brand__logo {
@@ -774,26 +747,23 @@ p {
     #contacto {
         .info__img {
             p {
-                font-size: 1.2rem!important;
+                font-size: 1.2rem !important;
             }
         }
         p {
             text-align: center;
         }
         .redes__lista {
-
             img {
                 width: 1.7rem;
             }
             .youtube--black {
-                width: 35px!important;
+                width: 35px !important;
             }
             li {
-                margin: 0 0.6rem!important;
+                margin: 0 0.6rem !important;
             }
         }
-
-        
     }
 
     #video {
@@ -899,6 +869,41 @@ p {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+
+    .navbar {
+        z-index: 15;
+        position: fixed;
+        top: 0;
+        padding-top: 70px;
+        width: 100%;
+        transition: all 0.3s;
+    
+        .navbar__container {
+            width: 100%;
+            position: relative;
+        }
+        .navbar-brand {
+            padding: 0;
+            .navbar-brand__logo {
+                width: 200px;
+                margin-left: 0px!important;
+                transition: 0.3s;
+            }
+        }
+        .nav-link {
+            color: red;
+            margin: 0 20px;
+            padding: 10px 0 !important;
+            font-size: 1.15rem;
+        }
+        .active {
+            border-bottom: 3px solid black;
+        }
+        .nav-link--inicio {
+            display: none;
+        }
+    }
+    
 
     /* Columnas */
     #columnas {
@@ -1006,4 +1011,36 @@ p {
             }
         }
     }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: white;
+    }
+    /* columnas */
+    #columnas {
+        .columnas__ondas--left {
+            left: -200px;
+        }
+    }
+    .profile {
+        width: 100%;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .navbar {
+        .navbar-brand__logo {
+            margin-left: 0px !important;
+        }
+        .nav-link {
+            margin: 0.7rem;
+        }
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
 }

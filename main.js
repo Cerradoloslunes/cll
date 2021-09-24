@@ -16,7 +16,7 @@ $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(r
       });
 });
 
-window.onscroll = () => { scrollFunction(); activeLink()};
+window.onscroll = () => { scrollFunction(); activeLink() };
 
 //subraya el link correspondiente a la sección actual
 const activeLink = () => {
@@ -35,20 +35,39 @@ const activeLink = () => {
 };
 
 const scrollFunction = () => {
-   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.getElementById("logo").style.width = "90px";
-      document.getElementById("navbar").style.paddingTop = "10px";
-      document.getElementById("navbar").style.backgroundColor = "white";
-   }
-   if (document.body.scrollTop < 80 && document.documentElement.scrollTop < 80) {
-      document.getElementById("logo").style.width = "290px";
-      document.getElementById("navbar").style.paddingTop = "70px";
-      document.getElementById("navbar").style.backgroundColor = "initial";
-   }
-   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-      document.getElementById("nav-link--inicio").style.display = "block";
-   }
-   if (document.body.scrollTop < 500 && document.documentElement.scrollTop < 500) {
-      document.getElementById("nav-link--inicio").style.display = "none";
+   if (screen.width > 767.98) {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+         document.getElementById("logo").style.width = "90px";
+         document.getElementById("navbar").style.paddingTop = "10px";
+         document.getElementById("navbar").style.backgroundColor = "white";
+      }
+      if (document.body.scrollTop < 80 && document.documentElement.scrollTop < 80) {
+         document.getElementById("logo").style.width = "290px";
+         document.getElementById("navbar").style.paddingTop = "70px";
+         document.getElementById("navbar").style.backgroundColor = "initial";
+      }
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+         document.getElementById("nav-link--inicio").style.display = "block";
+      }
+      if (document.body.scrollTop < 500 && document.documentElement.scrollTop < 500) {
+         document.getElementById("nav-link--inicio").style.display = "none";
+      }
+   } else {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+         document.getElementById("logo").style.width = "90px";
+         document.getElementById("navbar").style.paddingTop = "10px";
+         document.getElementById("navbar").style.backgroundColor = "white";
+      }
+      if (document.body.scrollTop < 80 && document.documentElement.scrollTop < 80) {
+         document.getElementById("logo").style.width = "200px";
+         document.getElementById("navbar").style.paddingTop = "70px";
+         document.getElementById("navbar").style.backgroundColor = "initial";
+      }
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+         document.getElementById("nav-link--inicio").style.display = "block";
+      }
+      if (document.body.scrollTop < 500 && document.documentElement.scrollTop < 500) {
+         document.getElementById("nav-link--inicio").style.display = "none";
+      }
    }
 }
