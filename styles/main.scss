@@ -576,7 +576,7 @@ p {
 .x-purple-middle-bottom {
     position: absolute;
     right: 70%;
-    left: 30%;
+    left: 60%;
     bottom: -15rem;
     transform: rotate(160deg);
 }
@@ -703,6 +703,9 @@ p {
 .bubble-links-img {
     width: 1.5rem;
     margin: 0.3rem;
+    &:hover {
+        fill:#000;
+    }
 }
 
 .bubble-img {
