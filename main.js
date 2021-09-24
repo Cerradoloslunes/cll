@@ -9,11 +9,6 @@ $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(r
    let embebed = document.getElementById("youtubeVideo");
    embebed.src = url;
 
-   /* Obtener título */
-   $.getJSON('https://noembed.com/embed',
-      { format: 'json', url: url }, function (data) {
-         console.log(data.title);
-      });
 });
 
 window.onscroll = () => { scrollFunction(); activeLink() };
@@ -21,7 +16,7 @@ window.onscroll = () => { scrollFunction(); activeLink() };
 //subraya el link correspondiente a la sección actual
 const activeLink = () => {
    var st = $(this).scrollTop() + 20;
-   console.log(st)
+ 
 
    $("section").each(function () {
       if (st > $(this).offset().top && st <= $(this).offset().top + $(this).height()) {
