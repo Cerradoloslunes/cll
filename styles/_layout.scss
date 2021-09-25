@@ -13,30 +13,14 @@
     }
 }
 
-/* @media (min-height: 600px) {
+@media (max-width: 576px) {
     #welcome {
-        height: 120vh;
+        .welcome__container {
+            margin-top: 100px;
+        }
     }
 }
 
-@media (min-height: 700px) {
-    #welcome {
-        height: 100vh;
-    }
-}
-
-@media (min-height: 950px) {
-    #welcome {
-        height: 70vh;
-    }
-} */
-
-/* @media (max-height: 949.99) {
-    #welcome {
-    height: 100vh;
-    }
-}
- */
 @media (min-width: 767.98px) {
     /* Inicio */
     .welcome__info {

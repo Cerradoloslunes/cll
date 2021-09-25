@@ -59,6 +59,10 @@ p {
     text-align: left;
 }
 
+.welcome-text {
+    font-size: 1.2rem;
+}
+
 .container-misc {
     overflow: hidden;
 }
@@ -191,13 +195,14 @@ p {
     }
 
     .cruz {
-        left: -8%;
-        top: -8vh;
+        left: -10%;
+        top: -8%;
         max-width: 35vh;
     }
 
     .ondas-v {
-        top: -10vh;
+        top: -5%;
+        max-width: 40vw;
     }
 }
 
