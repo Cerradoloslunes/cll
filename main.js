@@ -16,7 +16,7 @@ window.onscroll = () => { scrollFunction(); activeLink() };
 //subraya el link correspondiente a la sección actual
 const activeLink = () => {
    var st = $(this).scrollTop() + 20;
- 
+
 
    $("section").each(function () {
       if (st > $(this).offset().top && st <= $(this).offset().top + $(this).height()) {
@@ -28,6 +28,9 @@ const activeLink = () => {
       }
    });
 };
+
+
+
 
 const scrollFunction = () => {
    if (screen.width > 767.98) {
@@ -66,3 +69,6 @@ const scrollFunction = () => {
       }
    }
 }
+
+
+

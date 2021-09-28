@@ -713,6 +713,20 @@ p {
     padding-top: 12rem;
 }
 
+
+#feed {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        margin-left: 13%;
+        margin-bottom: 6rem;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+}
+
+
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .navbar {
@@ -732,6 +746,15 @@ p {
             background-color: white;
         }
     }
+
+    #feed {
+        margin-top: 5rem;
+        h2 {
+            margin-left: 1rem;
+            font-size: 1.7rem;
+        }
+    }
+
 
     /* Contacto */
     #contacto {
