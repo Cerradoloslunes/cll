@@ -429,6 +429,19 @@ p {
                     flex-direction: column;
                     align-items: center;
                     margin-bottom: 3rem;
+
+                    .openPopup {
+                        background-color: $miselanias;
+                        color: white;
+                        border-radius: 20px;
+                        padding: 10px 40px;
+                        outline: none;
+                        box-shadow: none;
+                        border: none;
+                        font-weight: bold;
+                    }
+
+
                     p {
                         font-size: 1.2rem;
                         margin-top: 1.2rem;
@@ -737,10 +750,6 @@ p {
 @media (max-width: 575.98px) {
     .navbar {
         padding-top: 20px;
-        .navbar-brand {
-            .navbar-brand__logo {
-            }
-        }
     }
 
     /* Navbar */

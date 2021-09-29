@@ -160,8 +160,6 @@
   </section>
 
   <section class="container-fluid" id="video">
-      <!-- Trigger/Open The Modal -->
-  <button id="myBtn">Open Modal</button>
     <h2>Por si te lo perdiste</h2>
     <div class="videoContainer">
       <div class="videoRelative">
@@ -197,11 +195,20 @@
     <div class="container contacto__container">
       <div class="row row-cols-1 row-cols-lg-2 contacto__card">
         <div class="col contacto__info">
-          <div class="info__img">
+          <div class="info__img mb-3">
             <img src="./images/contacto-foto.png" alt="">
             <p>Todos los lunes de 13.00 a 14.00hs</p>
           </div>
           <div class="contacto__redes">
+            <div class="cafecito">
+              <a href='https://cafecito.app/cerradoloslunes' rel='noopener' target='_blank'><img
+                  srcset='https://cdn.cafecito.app/imgs/buttons/button_4.png 1x, https://cdn.cafecito.app/imgs/buttons/button_4_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_4_3.75x.png 3.75x'
+                  src='https://cdn.cafecito.app/imgs/buttons/button_4.png' alt='Invitame un café en cafecito.app' /></a>
+            </div>
+            <div>
+              <!-- Trigger/Open The Modal -->
+              <button id="myBtn" class="openPopup mt-4">Suscribirme al Newsletter</button>
+            </div>
             <p>Seguinos en nuestras redes</p>
             <ul class="redes__lista">
               <li>
@@ -236,11 +243,6 @@
                 </a>
               </li>
             </ul>
-            <div class="cafecito">
-              <a href='https://cafecito.app/cerradoloslunes' rel='noopener' target='_blank'><img
-                  srcset='https://cdn.cafecito.app/imgs/buttons/button_4.png 1x, https://cdn.cafecito.app/imgs/buttons/button_4_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_4_3.75x.png 3.75x'
-                  src='https://cdn.cafecito.app/imgs/buttons/button_4.png' alt='Invitame un café en cafecito.app' /></a>
-            </div>
           </div>
         </div>
         <div class="col contacto__form">
@@ -285,18 +287,17 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <p>No te quedes afuera, cerrado los lunes te informa todo lo que tenés que saber.</p>
+      <h2>Unite al Newsletter</h2>
+      <p>No te quedes afuera, Cerrado los Lunes te informa todo lo que tenés que saber.</p>
       <form action="https://api.sheetmonkey.io/form/t4sELqr5eLpCds7daTwazb" method="post">
         <div>
-          <label>Nombre</label>
-          <input type="text" name="Name" required />
+          <input type="text" name="Name" required placeholder="Nombre" />
         </div>
         <div>
-          <label>Email </label>
-          <input type="email" name="Email" required />
+          <input type="email" name="Email" required placeholder="Email" />
         </div>
         <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-        <input class="mt-4 button" type="submit" value="Sign Up" />
+        <input class="mt-4 button" type="submit" value="Unirme" />
       </form>
     </div>
 
