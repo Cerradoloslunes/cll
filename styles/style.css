@@ -11168,6 +11168,84 @@ textarea.form-control-lg {
   padding-top: 10rem;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 700px;
+  /* The Close Button */
+}
+.modal-content p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content form input {
+  width: 300px;
+}
+.modal-content form .button {
+  width: 150px;
+  background-color: #743FF7;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 40px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  font-weight: bold;
+}
+.modal-content form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.modal-content .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal-content .close:hover,
+.modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 * {
   font-family: "Futura";
   font-weight: normal;
@@ -11182,6 +11260,9 @@ textarea.form-control-lg {
   padding-top: 70px;
   width: 100%;
   transition: all 0.3s;
+}
+.navbar .navbar-toggler {
+  z-index: 2;
 }
 .navbar .navbar__container {
   width: 80%;

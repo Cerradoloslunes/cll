@@ -160,6 +160,8 @@
   </section>
 
   <section class="container-fluid" id="video">
+      <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Open Modal</button>
     <h2>Por si te lo perdiste</h2>
     <div class="videoContainer">
       <div class="videoRelative">
@@ -184,11 +186,11 @@
   <section class="container-fluid" id="feed">
     <h2>Últimas novedades</h2>
     <!-- SnapWidget -->
-    
-   <div class="container">
-    <iframe src="https://snapwidget.com/embed/964753" class="snapwidget-widget" allowtransparency="true" frameborder="0"
-    scrolling="no" style="border:none; overflow:hidden;  width:100%; height:900px; "></iframe>
-   </div>
+
+    <div class="container">
+      <iframe src="https://snapwidget.com/embed/964753" class="snapwidget-widget" allowtransparency="true"
+        frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; height:900px; "></iframe>
+    </div>
   </section>
 
   <section id="contacto">
@@ -277,16 +279,28 @@
     </div>
   </section>
 
+  <!-- The Modal -->
+  <div style="z-index: 50;" id="myModal" class="modal">
 
-  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>No te quedes afuera, cerrado los lunes te informa todo lo que tenés que saber.</p>
+      <form action="https://api.sheetmonkey.io/form/t4sELqr5eLpCds7daTwazb" method="post">
+        <div>
+          <label>Nombre</label>
+          <input type="text" name="Name" required />
+        </div>
+        <div>
+          <label>Email </label>
+          <input type="email" name="Email" required />
+        </div>
+        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        <input class="mt-4 button" type="submit" value="Sign Up" />
+      </form>
+    </div>
 
-
-  <form action="https://api.sheetmonkey.io/form/t4sELqr5eLpCds7daTwazb" method="post">
-    <label>Your Name: <input type="text" name="Name" required /></label>
-    <label>Your Email: <input type="email" name="Email" required /></label>
-    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-    <input type="submit" value="Sign Up" />
-  </form>
+  </div>
 
 
 
